@@ -4,12 +4,22 @@ import HeaderDark from '../components/HeaderDark';
 class Home extends Component {
   render() {
     return (
-      <div className="d-flex w-100 h-100 mx-auto px-4 flex-column">
+      <div>
         <HeaderDark />
-        <div 
-          style={{
-            paddingTop: '115px'
-          }}>
+        <div className="container"
+        style={{
+          paddingTop: '115px',
+          backgroundColor: 'blue'
+        }}>
+          <div class="row">
+            <div className="container" 
+            style={{
+              height: '300px',
+              backgroundColor: 'red'
+            }}>
+
+            </div>
+          </div>
         </div>
       </div>
     );

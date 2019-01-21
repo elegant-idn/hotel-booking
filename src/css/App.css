@@ -1,8 +1,18 @@
 /* App.css */
+html, body {
+  background-color: #000;
+}
 
 .navbar {
+  height: 60px;
   box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.5);
 }
+
+.navbar-dark {
+  background-color: #000;
+  color: #fff;
+}
+
 .navbar-brand {
   margin-right: auto;
   margin-left: auto;
@@ -10,7 +20,8 @@
 }
 
 .navbar-brand-img {
-  width: 125px;
+  width: 100px;
+  margin-bottom: 3px;
 }
 
 /* Extra small devices (portrait phones, less than 576px) */
@@ -22,7 +33,20 @@
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
   .navbar {
+    height: 90px;
     margin-top: 15px;
+  }
+  .navbar-brand-img {
+    width: 125px;
+    margin-bottom: 0;
+  }
+  .navbar-spacer {
+    height: 15px;
+  }
+  .nav-link {
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
   }
 }
 

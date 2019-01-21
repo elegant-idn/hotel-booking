@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import 'bootstrap/dist/css/bootstrap.min.css';
+import './scss/papriika.scss';
 import './css/index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
