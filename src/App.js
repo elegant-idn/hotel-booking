@@ -19,10 +19,15 @@ class App extends Component {
         </nav>
         <div className="container">
           <div className="text-center mt-5">
-            <h1>
+            <h2 style={{ marginTop: '16px', marginBottom: '40px' }}>
+              Your hand curated hotel club.
+            </h2>
+            <h3 style={{ marginBottom: '8px' }}>
               Coming soon...
-            </h1>
-            <p style={{ fontSize: '18px', marginTop: '16px' }}>The world’s best hotels, hand curated.</p>
+            </h3>
+            <p className="lead">
+              2,300 of the world’s best hotels.
+            </p>
           </div>
         </div>
       </div>
