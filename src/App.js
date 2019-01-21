@@ -20,7 +20,7 @@ class App extends Component {
         <div className="container">
           <div className="text-center mt-5">
             <h2 style={{ marginTop: '16px', marginBottom: '40px' }}>
-              Your hand curated hotel club.
+              Hand curated hotel club.
             </h2>
             <h3 style={{ marginBottom: '8px' }}>
               Coming soon...
