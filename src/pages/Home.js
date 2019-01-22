@@ -1,13 +1,13 @@
 import React, { Component } from 'react';
 import HeaderDark from '../components/HeaderDark';
-import HeaderSearch from '../components/HeaderSearch';
+import HeaderBook from '../components/HeaderBook';
 
 class Home extends Component {
   render() {
     return (
       <div>
         <HeaderDark />
-        <HeaderSearch />
+        <HeaderBook />
         <div className="jumbotron bg-primary rounded-0"
         style={{
           height: '510px'

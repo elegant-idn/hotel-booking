@@ -1,9 +1,5 @@
 /* App.css */
 
-/*html, body {
-  background-color: #000;
-}*/
-
 .navbar-dark {
   height: 60px;
   background-color: #000;
@@ -12,8 +8,20 @@
 }
 
 .navbar-light {
-  height: 105px;
   color: #000;
+}
+
+.navbar-destination {
+  margin-bottom: 15px;
+}
+
+input#destination.form-control {
+  width: auto;
+}
+
+.navbar-search {
+  margin-top: 60px;
+  padding: 0;
 }
 
 .navbar-brand {
@@ -22,16 +30,74 @@
   font-size: 1rem;
 }
 
+.label-destination {
+  margin-top: 19px;
+}
+
 .navbar-brand-img {
   width: 100px;
-  margin-bottom: 3px;
+  margin-top: 2px;
+}
+
+.navbar-fixed-container {
+  position: fixed;
+  top: 9px;
+  min-width: 100%;
+}
+
+button.navbar-toggler {
+  position: fixed;
+  top: 11px;
+  display: flex;
+  align-items: center;
+  left: 15px;
+  outline: none;
+  border: none;
+}
+
+.navbar-text {
+  width: 100%;
+  text-align: center;
+}
+
+.btn-navbar-search {
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: 14px;
+  height: 105px;
+  padding-right: 25px;
+  padding-left: 25px;
+  margin-bottom: 0;
+  margin-right: -15px;
+}
+
+input#destination.form-control::placeholder {
+  font-size: 16px;
+}
+input.#destination.form-control:focus::-webkit-input-placeholder {
+  color: transparent;
+}
+input#destination.form-control::placeholder {
+  color: #c9c9c9;
+  font-weight: 600;
+}
+input#destination.form-control:focus {
+  box-shadow: none;
+}
+input#destination.form-control {
+  width: 240px;
 }
 
 /* Extra small devices (portrait phones, less than 576px) */
 /* No media query for `xs` since this is the default in Bootstrap */
 
 /* Small devices (landscape phones, 576px and up) */
-@media (min-width: 576px) {}
+@media (min-width: 576px) {
+  .label-destination {
+    margin-top: 29px;
+  }
+}
 
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
@@ -39,35 +105,58 @@
     height: 90px;
     /*margin-top: 15px; // to add 15px white space */
   }
+  .navbar-row-navbar-search {
+    border-right: 1px solid #eee;
+    border-left: 1px solid #eee;
+  }
+  .navbar-light {
+    height: 105px;
+  }
+  .navbar-search {
+    margin-top: 90px;
+  }
+  div#navbarBasic.collapse.navbar-collapse {
+    margin-top: 0!important;
+  }
+  .navbar-destination {
+    width: 250px;
+    border-right: 1px solid #eee;
+  }
+  .navbar-fixed-container {
+    position: relative;
+    top: 0;
+    height: 90px;
+  }
+  .navbar-text {
+    width: auto;
+    text-align: left;
+    margin-top: 5px;
+    margin-right: 24px;
+    margin-left: 24px;
+  }
   .navbar-brand-img {
     width: 125px;
-    margin-bottom: 0;
+    margin-bottom: 2px;
   }
-  .navbar-spacer {
-    height: 15px;
+  .navbar-nav {
+    margin-top: -1px;
   }
   .nav-link {
     font-size: 12px;
     font-weight: 700;
     text-transform: uppercase;
   }
-  input#destination::placeholder,
   input#dates::placeholder,
   input#adults::placeholder,
   input#children::placeholder,
   input#rooms::placeholder {
     font-size: 16px;
   }
-  input#destination:focus::-webkit-input-placeholder,
   input#dates:focus::-webkit-input-placeholder,
   input#adults:focus::-webkit-input-placeholder,
   input#children:focus::-webkit-input-placeholder,
   input#rooms:focus::-webkit-input-placeholder {
     color: transparent;
-  }
-  input#destination::placeholder {
-    color: #c9c9c9;
-    font-weight: 600;
   }
   input#dates::placeholder,
   input#adults::placeholder,
@@ -81,7 +170,6 @@
   input#rooms::placeholder {
     text-align: center;
   }
-  input#destination:focus,
   input#dates:focus,
   input#adults:focus,
   input#children:focus,
@@ -106,12 +194,19 @@
   .form-group-navbar-search {
     margin: 0;
   }
+  .btn-navbar-search {
+    margin-right: 0;
+  }
 }
 
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
-  .navbar-brand {
-    margin-left: 0;
+  .navbar-fixed-container {
+    min-width: unset;
+  }
+  .btn-navbar-search {
+    padding-right: 40px;
+    padding-left: 40px;
   }
 }
 

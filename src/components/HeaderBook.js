@@ -1,42 +1,24 @@
 import React, { Component } from 'react';
 
-const placeholderStyle = {
-  margin: '40px',
-  border: '5px solid pink'
-};
-
-
-class HeaderSearch extends Component {
+class HeaderBook extends Component {
   render() {
     return (
-      <div className="container-fluid d-none d-lg-block">
-        <div className="container mx-auto"
+      <div className="container-fluid no-gutters">
+        <div className="row">
+        <div className="container mx-auto no-gutters"
         style={{
           maxWidth: '960px'
         }}>
-          <nav className="navbar navbar-light navbar-search" 
-          style={{ 
-            marginTop: '90px',
-            padding: '0'
-          }}>           
+          <nav className="navbar navbar-light navbar-search">
             <form className="w-100">
-              <div className="form-row" 
-              style={{
-                borderRight: '1px solid #eee',
-                borderLeft: '1px solid #eee',
-              }}>
-                <div className="form-group form-group-navbar-search" 
-                  style={{
-                    borderRight: '1px solid #eee'
-                  }}>
-                  <label for="destination"
+              <div className="form-row navbar-row-navbar-search">
+                <div className="form-group form-group-navbar-search navbar-destination d-inline">
+                  <label htmlFor="destination" className="label-destination"
                     style={{
-                      width: '250px',
                       fontSize: '12px',
                       fontWeight: '700',
                       textTransform: 'uppercase',
                       lineHeight: '14px',
-                      marginTop: '29px',
                       marginBottom: '0',
                       marginLeft: '20px'
                     }}>
@@ -44,11 +26,10 @@ class HeaderSearch extends Component {
                   </label>
                   <input 
                     type="text"
-                    role="textbox"
-                    autocomplete="off"
-                    autofocus="autofocus"
-                    maxlength="60"
-                    tabindex="0"
+                    autoComplete="off"
+                    autoFocus="autofocus"
+                    maxLength="60"
+                    tabIndex="0"
                     id="destination"
                     className="form-control"
                     style={{
@@ -58,8 +39,7 @@ class HeaderSearch extends Component {
                       fontSize: '16px',
                       letterSpacing: '-0.03em',
                       fontWeight: '500',
-                      marginLeft: '7px',
-                      width: '250px'
+                      marginLeft: '7px'
                     }}
                     placeholder="Destination or hotel name"
                     aria-invalid="false"
@@ -69,11 +49,11 @@ class HeaderSearch extends Component {
                     name="destination"
                   />
                 </div>
-                <div className="form-group col-md-3 form-group-navbar-search"
+                <div className="form-group col-md-4 col-lg-3 form-group-navbar-search d-none d-md-block"
                   style={{
                     borderRight: '1px solid #eee'
                   }}>
-                  <label for="dates" className="d-block"
+                  <label htmlFor="dates" className="d-block"
                     style={{
                       fontSize: '12px',
                       fontWeight: '700',
@@ -87,10 +67,9 @@ class HeaderSearch extends Component {
                   </label>
                   <input
                     type="text"
-                    role="textbox"
-                    autocomplete="off"
-                    maxlength="10"
-                    tabindex="0"
+                    autoComplete="off"
+                    maxLength="10"
+                    tabIndex="0"
                     id="dates"
                     className="form-control col-md-6 d-inline"
                     style={{
@@ -110,10 +89,9 @@ class HeaderSearch extends Component {
                   />
                   <input 
                     type="text"
-                    role="textbox"
-                    autocomplete="off"
-                    maxlength="10"
-                    tabindex="0"
+                    autoComplete="off"
+                    maxLength="10"
+                    tabIndex="0"
                     id="dates"
                     className="form-control col-md-6 d-inline"
                     style={{
@@ -132,12 +110,12 @@ class HeaderSearch extends Component {
                     name="dates"
                   />
                 </div>
-                <div className="form-group form-group-navbar-search text-center"
+                <div className="form-group form-group-navbar-search text-center d-none d-lg-block"
                   style={{
                     width: '99.6px',
                     paddingLeft: '10px'
                   }}>
-                  <label for="adults"
+                  <label htmlFor="adults"
                     style={{
                       fontSize: '12px',
                       fontWeight: '700',
@@ -150,10 +128,9 @@ class HeaderSearch extends Component {
                   </label>
                   <input 
                     type="number"
-                    role="textbox"
-                    autocomplete="off"
-                    maxlength="60"
-                    tabindex="0"
+                    autoComplete="off"
+                    maxLength="60"
+                    tabIndex="0"
                     id="adults"
                     className="form-control"
                     style={{
@@ -173,11 +150,11 @@ class HeaderSearch extends Component {
                     name="adults"
                   />
                 </div>
-                <div className="form-group form-group-navbar-search text-center"
+                <div className="form-group form-group-navbar-search text-center d-none d-lg-block"
                   style={{
                     width: '99.6px'
                   }}>
-                  <label for="children"
+                  <label htmlFor="children"
                     style={{
                       fontSize: '12px',
                       fontWeight: '700',
@@ -190,10 +167,9 @@ class HeaderSearch extends Component {
                   </label>
                   <input 
                     type="number"
-                    role="textbox"
-                    autocomplete="off"
-                    maxlength="60"
-                    tabindex="0"
+                    autoComplete="off"
+                    maxLength="60"
+                    tabIndex="0"
                     id="children"
                     className="form-control"
                     style={{
@@ -213,12 +189,13 @@ class HeaderSearch extends Component {
                     name="children"
                   />
                 </div>
-                <div className="form-group form-group-navbar-search text-center" 
+                <div className="form-group form-group-navbar-search text-center d-none d-md-block" 
                   style={{
                     width: '99.6px',
-                    paddingRight: '10px'
+                    paddingRight: '10px',
+                    marginLeft: 'auto'
                   }}>
-                  <label for="rooms"
+                  <label htmlFor="rooms"
                     style={{
                       fontSize: '12px',
                       fontWeight: '700',
@@ -231,10 +208,9 @@ class HeaderSearch extends Component {
                   </label>
                   <input 
                     type="number"
-                    role="textbox"
-                    autocomplete="off"
-                    maxlength="60"
-                    tabindex="0"
+                    autoComplete="off"
+                    maxLength="60"
+                    tabIndex="0"
                     id="rooms"
                     className="form-control"
                     style={{
@@ -254,21 +230,12 @@ class HeaderSearch extends Component {
                     name="rooms"
                   />
                 </div>
-                <div className="form-group form-group-navbar-search ml-auto"
+                <div className="form-group form-group-navbar-search ml-auto d-none d-sm-block"
                   style={{
-                    height: '105px',
-                    padding: '0'
+                    padding: '0',
+                    marginBottom: '0'
                   }}>
-                  <button type="submit" class="btn btn-primary rounded-0"
-                    style={{
-                      fontSize: '12px',
-                      fontWeight: '700',
-                      textTransform: 'uppercase',
-                      lineHeight: '14px',
-                      height: '105px',
-                      paddingRight: '40px',
-                      paddingLeft: '40px'
-                    }}>
+                  <button type="submit" className="btn btn-primary btn-navbar-search rounded-0">
                     Search
                   </button>
                 </div>
@@ -276,9 +243,10 @@ class HeaderSearch extends Component {
             </form>
           </nav>
         </div>
+        </div>
       </div>
     );
   }
 }
 
-export default HeaderSearch;
+export default HeaderBook;
