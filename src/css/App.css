@@ -55,9 +55,17 @@ button.navbar-toggler {
   border: none;
 }
 
+.navbar-toggler-icon {
+  width: 20px;
+}
+
 .navbar-text {
   width: 100%;
   text-align: center;
+}
+
+.navbar-search-wrapper {
+  padding-right: 0;
 }
 
 .btn-navbar-search {
@@ -69,7 +77,6 @@ button.navbar-toggler {
   padding-right: 25px;
   padding-left: 25px;
   margin-bottom: 0;
-  margin-right: -15px;
 }
 
 input#destination.form-control::placeholder {
@@ -196,6 +203,9 @@ input#destination.form-control {
   }
   .btn-navbar-search {
     margin-right: 0;
+  }
+  .navbar-search-wrapper {
+    padding-right: 15px;
   }
 }
 
