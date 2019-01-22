@@ -1,16 +1,19 @@
 /* App.css */
-html, body {
-  background-color: #000;
-}
 
-.navbar {
+/*html, body {
+  background-color: #000;
+}*/
+
+.navbar-dark {
   height: 60px;
+  background-color: #000;
+  color: #fff;
   box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.5);
 }
 
-.navbar-dark {
-  background-color: #000;
-  color: #fff;
+.navbar-light {
+  height: 105px;
+  color: #000;
 }
 
 .navbar-brand {
@@ -32,7 +35,7 @@ html, body {
 
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
-  .navbar {
+  .navbar-dark {
     height: 90px;
     margin-top: 15px;
   }
@@ -47,6 +50,12 @@ html, body {
     font-size: 12px;
     font-weight: 700;
     text-transform: uppercase;
+  }
+  input#navbarSearch::placeholder {
+    color: #c9c9c9;
+  }
+  .form-group-navbar-search {
+    margin: 0;
   }
 }
 

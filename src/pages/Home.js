@@ -1,25 +1,22 @@
 import React, { Component } from 'react';
 import HeaderDark from '../components/HeaderDark';
+import HeaderSearch from '../components/HeaderSearch';
 
 class Home extends Component {
   render() {
     return (
       <div>
         <HeaderDark />
-        <div className="container"
+        <HeaderSearch />
+        <div className="jumbotron bg-dark rounded-0"
         style={{
-          paddingTop: '115px',
-          backgroundColor: 'blue'
+          height: '550px'
         }}>
-          <div class="row">
-            <div className="container" 
-            style={{
-              height: '300px',
-              backgroundColor: 'red'
-            }}>
-
-            </div>
-          </div>
+        </div>
+        <div className="jumbotron bg-white rounded-0"
+        style={{
+          height: '550px'
+        }}>
         </div>
       </div>
     );
