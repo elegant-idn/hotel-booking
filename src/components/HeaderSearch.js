@@ -9,10 +9,7 @@ const placeholderStyle = {
 class HeaderSearch extends Component {
   render() {
     return (
-      <div className="container-fluid d-none d-lg-block" 
-      style={{
-        borderBottom: '1px solid #eee'
-      }}>
+      <div className="container-fluid d-none d-lg-block">
         <div className="container mx-auto"
         style={{
           maxWidth: '960px'

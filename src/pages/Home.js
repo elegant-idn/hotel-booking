@@ -8,9 +8,9 @@ class Home extends Component {
       <div>
         <HeaderDark />
         <HeaderSearch />
-        <div className="jumbotron bg-dark rounded-0"
+        <div className="jumbotron bg-primary rounded-0"
         style={{
-          height: '550px'
+          height: '510px'
         }}>
         </div>
         <div className="jumbotron bg-white rounded-0"
