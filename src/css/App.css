@@ -8,7 +8,7 @@
   height: 60px;
   background-color: #000;
   color: #fff;
-  box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.5);
+  box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.4);
 }
 
 .navbar-light {
@@ -37,7 +37,7 @@
 @media (min-width: 768px) {
   .navbar-dark {
     height: 90px;
-    margin-top: 15px;
+    /*margin-top: 15px; // to add 15px white space */
   }
   .navbar-brand-img {
     width: 125px;
@@ -51,8 +51,57 @@
     font-weight: 700;
     text-transform: uppercase;
   }
-  input#navbarSearch::placeholder {
+  input#destination::placeholder,
+  input#dates::placeholder,
+  input#adults::placeholder,
+  input#children::placeholder,
+  input#rooms::placeholder {
+    font-size: 16px;
+  }
+  input#destination:focus::-webkit-input-placeholder,
+  input#dates:focus::-webkit-input-placeholder,
+  input#adults:focus::-webkit-input-placeholder,
+  input#children:focus::-webkit-input-placeholder,
+  input#rooms:focus::-webkit-input-placeholder {
+    color: transparent;
+  }
+  input#destination::placeholder {
     color: #c9c9c9;
+    font-weight: 600;
+  }
+  input#dates::placeholder,
+  input#adults::placeholder,
+  input#children::placeholder,
+  input#rooms::placeholder {
+    color: #000;
+    font-weight: 500;
+  }
+  input#adults::placeholder,
+  input#children::placeholder,
+  input#rooms::placeholder {
+    text-align: center;
+  }
+  input#destination:focus,
+  input#dates:focus,
+  input#adults:focus,
+  input#children:focus,
+  input#rooms:focus {
+    box-shadow: none;
+  }
+  input#dates:hover::-webkit-input-placeholder,
+  input#adults:hover::-webkit-input-placeholder,
+  input#children:hover::-webkit-input-placeholder,
+  input#rooms:hover::-webkit-input-placeholder {
+    color: #005bf7;
+  }
+  input#adults::-webkit-outer-spin-button,
+  input#adults::-webkit-inner-spin-button,
+  input#children::-webkit-outer-spin-button,
+  input#children::-webkit-inner-spin-button,
+  input#rooms::-webkit-outer-spin-button,
+  input#rooms::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
   }
   .form-group-navbar-search {
     margin: 0;
