@@ -1,5 +1,9 @@
 /* App.css */
 
+html, body {
+  overflow-x: hidden;
+}
+
 .navbar-dark {
   height: 60px;
   background-color: #000;
@@ -62,6 +66,9 @@ button.navbar-toggler {
 .navbar-text {
   width: 100%;
   text-align: center;
+  background-color: #005bf7;
+  line-height: 45px;
+  margin-bottom: 15px;
 }
 
 .navbar-search-wrapper {
@@ -79,10 +86,27 @@ button.navbar-toggler {
   margin-bottom: 0;
 }
 
+.nav-item {
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: 14px;
+}
+
+a.nav-link {
+  padding-top: 13px;
+  padding-bottom: 13px;
+  padding-left: 25px!important;
+}
+a.nav-link:hover {
+  background-color: #fff;
+  color: #000!important;
+}
+
 input#destination.form-control::placeholder {
   font-size: 16px;
 }
-input.#destination.form-control:focus::-webkit-input-placeholder {
+input#destination.form-control:focus::-webkit-input-placeholder {
   color: transparent;
 }
 input#destination.form-control::placeholder {
@@ -140,6 +164,9 @@ input#destination.form-control {
     margin-top: 5px;
     margin-right: 24px;
     margin-left: 24px;
+    background-color: transparent;
+    line-height: 1.75;
+    margin-bottom: 5px;
   }
   .navbar-brand-img {
     width: 125px;

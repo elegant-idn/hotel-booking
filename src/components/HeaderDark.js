@@ -27,8 +27,7 @@ class HeaderDark extends Component {
             <div className="navbar-text text-white"
               style={{
                 fontSize: '15px',
-                fontWeight: '700',
-                paddingBottom: '15px'
+                fontWeight: '700'
               }}>
               The world’s best hotels, hand curated
             </div>
@@ -37,10 +36,7 @@ class HeaderDark extends Component {
                 <a className="nav-link" href="#">Contact</a>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="#">Contact</a>
-              </li>
-              <li className="nav-item">
-                <a className="nav-link" href="#">Contact</a>
+                <p className="nav-link" href="#"></p>
               </li>
             </ul>
           </div>
