@@ -1,11 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import 'bootstrap';
 import './scss/papriika.scss';
 import './css/index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 
-import 'bootstrap';
 
 ReactDOM.render(<App />, document.getElementById('root'));
 

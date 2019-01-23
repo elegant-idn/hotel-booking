@@ -3,7 +3,7 @@
 // Define the minimum dimensions at which your layout will change,
 // adapting to different screen sizes, for use in media queries.
 
-$grid-breakpoints: () !default;
+$grid-breakpoints: ();
 // stylelint-disable-next-line scss/dollar-variable-default
 $grid-breakpoints: map-merge(
   (
@@ -21,7 +21,7 @@ $grid-breakpoints: map-merge(
 //
 // Define the maximum width of `.container` for different screen sizes.
 
-$container-max-widths: () !default;
+$container-max-widths: ();
 // stylelint-disable-next-line scss/dollar-variable-default
 $container-max-widths: map-merge(
   (
@@ -34,17 +34,11 @@ $container-max-widths: map-merge(
   $container-max-widths
 );
 
+.navbar-text {
+  font-size: 15px;
+  font-weight: 600;  
+}
 
-// Grid columns
-//
-// Set the number of columns and specify the width of the gutters.
-
-$grid-columns:                12 !default;
-$grid-gutter-width:           30px !default;
-
-
-
-$navbar-dark-color:                 rgba(#fff, 1);
 $navbar-dark-hover-color:           rgba(#fff, .5);
 $navbar-dark-active-color:          blue;
 
@@ -52,5 +46,5 @@ $navbar-light-color:                 rgba(#000, 1);
 $navbar-light-hover-color:           rgba(#000, .5);
 $navbar-light-active-color:          blue;
 
-@import 'node_modules/bootstrap/scss/bootstrap.scss';
 @import 'node_modules/@universelabs/meta/scss/meta.scss';
+@import 'node_modules/bootstrap/scss/bootstrap.scss';

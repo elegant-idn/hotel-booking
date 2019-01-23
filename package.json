@@ -3,7 +3,7 @@
   "version": "0.2.0",
   "private": true,
   "dependencies": {
-    "@universelabs/meta": "^1.4.1",
+    "@universelabs/meta": "^1.4.3",
     "bootstrap": "^4.2.1",
     "jquery": "^3.3.1",
     "node-sass": "^4.11.0",
