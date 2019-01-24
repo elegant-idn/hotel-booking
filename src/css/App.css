@@ -2,7 +2,8 @@
 
 /* Navbar */
 
-.navbar-dark {
+.navbar-dark,
+.navbar-light {
   height: 60px;
 }
 
@@ -11,7 +12,8 @@
   margin-left: auto;
 }
 
-.navbar-brand-img {
+.navbar-brand-img,
+.brand-img-light {
   width: 100px;
 }
 
@@ -22,46 +24,48 @@
 }
 
 .navbar-nav {
-  margin: 25px 0;
+  padding-right: 40px;
+  padding-left: 40px;
+  margin: 16px 0;
   height: 100vh;
 }
 
 div#navbarBasic {
-  padding-right: 30px;
-  padding-left: 30px;
   top: 0;
   position: fixed;
   width: 100%;
 }
 
 .collapsing {
-  transition: height .65s ease;
+  transition: none;
 }
 
 .nav-item {
-  font-size: 12px;
-  font-weight: 700;
-  text-transform: uppercase;
+  border-bottom: 1px solid #212121;
 }
 
-.navbar-expand-md .navbar-nav .nav-link {
+li.nav-item:last-child {
+  border: none;
+}
+
+.nav-link {
+  font-weight: 500;
   color: #fff;
-  padding: 14px 25px;
-  margin-bottom: 1px;
+  padding: 12px 25px;
 }
 
 .navbar-text {
   width: 100%;
   text-align: center;
+  margin-top: 65px;
   padding-top: 3px;
-  padding-bottom: 24px;
-  border-bottom: 1px solid #212121;
+  padding-bottom: 8px;
 }
 
 button.navbar-toggler { 
   position: fixed; /* Prevents button from moving */
   top: 10px;
-  left: 15px;
+  left: 4px;
   outline: none; /* Removes blue outline */
   border: none; /* Removes border outline */
   padding: 9px;
@@ -149,9 +153,85 @@ input#destination.form-control {
   margin-bottom: 0;
 }
 
-input#destination.form-control::placeholder {
-  font-size: 16px;
-}
+/* Extra small devices (portrait phones, less than 576px) */
+/* No media query for `xs` since this is the default in Bootstrap */
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  
+  /* Navbar */
+  
+  .navbar-dark,
+  .navbar-light {
+    height: 90px;
+  }
+
+  .navbar-brand {
+    margin-top: -6px;
+    margin-left: 0;
+  }
+
+  .navbar-brand-img {
+    width: 125px;
+  }
+
+  .brand-img-light {
+    width: 150px;
+  }
+
+  /* Components
+  /*
+  /* Booking Header */
+
+  .navbar-row-navbar-search {
+    border-right: 1px solid #eee;
+    border-left: 1px solid #eee;
+  }
+
+  .nav-link {
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 8.5px 1rem;
+  }
+
+  .label-destination {
+    margin-top: 29px;
+  }
+
+  .navbar-search {
+    margin-top: 90px;
+  }
+
+  div#navbarBasic,
+  .navbar-fixed-container {
+    position: unset;
+  }
+
+  .navbar-destination {
+    width: 250px;
+    border-right: 1px solid #eee;
+  }
+
+  .navbar-text {
+    width: auto;
+    text-align: left;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    margin: 5px 0;
+    background-color: transparent!important;
+    border: none;
+  }
+
+  .navbar-nav {
+    margin-top: -1px;
+    margin-bottom: 0; /* Resets margin on navbar dropdown */
+    height: auto; /* Resets vh on small device dropdown */
+  }
+
 input#destination.form-control:focus::-webkit-input-placeholder {
   color: transparent;
 }
@@ -166,80 +246,8 @@ input#destination.form-control {
   width: 240px;
 }
 
-/* Extra small devices (portrait phones, less than 576px) */
-/* No media query for `xs` since this is the default in Bootstrap */
 
-/* Small devices (landscape phones, 576px and up) */
-@media (min-width: 576px) {}
-
-/* Medium devices (tablets, 768px and up) */
-@media (min-width: 768px) {
-  
-  /* Navbar */
-  
-  .navbar-dark {
-    height: 90px;
-  }
-
-  .navbar-brand {
-    margin-top: -6px;
-  }
-
-  .navbar-brand-img {
-    width: 125px;
-  }
-
-  /* Components
-  /*
-  /* Booking Header */
-
-  .navbar-row-navbar-search {
-    border-right: 1px solid #eee;
-    border-left: 1px solid #eee;
-  }
-
-  .navbar-expand-md .navbar-nav .nav-link {
-    padding: 8.5px 1rem;
-  }
-  .label-destination {
-    margin-top: 29px;
-  }
-  .navbar-search {
-    margin-top: 90px;
-  }
-  div#navbarBasic.collapse.navbar-collapse {
-    margin-top: 0!important;
-  }
-  .navbar-destination {
-    width: 250px;
-    border-right: 1px solid #eee;
-  }
-  .navbar-fixed-container {
-    position: relative;
-    top: 0;
-    height: 90px;
-    padding-right: 0;
-    padding-left: 0;
-  }
-  .navbar-text {
-    width: auto;
-    text-align: left;
-    padding-top: 0.5rem;
-    padding-bottom: 0.5rem;
-    margin: 5px 24px;
-    background-color: transparent!important;
-    border: none;
-  }
-
-  .navbar-nav {
-    margin-top: -1px;
-    margin-bottom: 0; /* Resets margin on navbar dropdown */
-  }
-  .nav-link {
-    font-size: 12px;
-    font-weight: 700;
-    text-transform: uppercase;
-  }
+  input#destination.form-control::placeholder,
   input#dates::placeholder,
   input#adults::placeholder,
   input#children::placeholder,

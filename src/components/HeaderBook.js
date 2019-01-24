@@ -3,13 +3,13 @@ import React, { Component } from 'react';
 class HeaderBook extends Component {
   render() {
     return (
-      <div className="container-fluid bg-whit d-none d-md-block">
+      <div className="container-fluid bg-white d-none d-md-block">
         <div className="row">
           <div className="container mx-auto navbar-search-wrapper"
             style={{
               maxWidth: '960px'
             }}>
-            <nav className="navbar navbar-light navbar-search bg-white">
+            <nav className="navbar navbar-search bg-white">
               <form className="w-100">
                 <div className="form-row navbar-row-navbar-search">
                   <div className="form-group form-group-navbar-search navbar-destination d-inline">

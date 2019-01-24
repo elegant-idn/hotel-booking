@@ -1,26 +1,25 @@
 import React, { Component } from 'react';
 import $ from 'jquery';
-import logo from './../img/papriika-logo-wordmark-1-white.svg';
+import logo from './../img/papriika-logo-wordmark-1.svg';
 
-// Value equal to `.collapsing` class is set to none.
-
-$(document).ready(function() {
-  $("button").click(function() {
-    $("#navbarBasic").animate( {
-      // Use `height: 'toggle',` to toggle height
-      opacity: "toggle"
-    }, 300, "swing");
+// Value equal to `.collapsing` class in App.css
+$(document).ready(function(){
+  $("button").click(function(){
+    $("#navbarBasic").fadeToggle("500", "linear");
   });
 });
 
-class HeaderDark extends Component {
+class HeaderLight extends Component {
   render() {
     return (
-      <nav className="navbar fixed-top navbar-expand-md navbar-dark bg-black">
+      <nav className="navbar fixed-top navbar-expand-md navbar-light bg-white"
+        style={{
+          borderBottom: '1px solid #eee'
+        }}>
         <div className="container fixed-top navbar-fixed-container">
           <button className="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarBasic" aria-controls="navbarBasic" aria-expanded="false" aria-label="Toggle navigation">
-            <span className="icon-bar top-bar bg-white"></span>
-            <span className="icon-bar bottom-bar bg-white"></span>       
+            <span className="icon-bar top-bar bg-black"></span>
+            <span className="icon-bar bottom-bar bg-black"></span>       
           </button>
           <a href="/" className="navbar-brand"
             style={{
@@ -28,15 +27,13 @@ class HeaderDark extends Component {
             }}>
             <img 
               src={logo} 
-              className="navbar-brand-img"
+              className="navbar-brand-img brand-img-light"
               alt="Papriika"
             />
           </a>
-          <div className="collapse navbar-collapse bg-black" id="navbarBasic">
-            <div className="navbar-text"
-              style={{
-                opacity: '1'
-              }}>
+
+          <div className="collapse navbar-collapse bg-white" id="navbarBasic">
+            <div className="navbar-text text-black-50">
               The world’s best hotels, hand curated
             </div>
             <ul className="navbar-nav ml-auto">
@@ -54,4 +51,4 @@ class HeaderDark extends Component {
   }
 }
 
-export default HeaderDark;
+export default HeaderLight;
