@@ -37,7 +37,7 @@ div#navbarBasic {
 }
 
 .collapsing {
-  transition: none;
+  transition: height .4s ease;
 }
 
 .nav-item {
@@ -116,43 +116,6 @@ button.navbar-toggler {
   transform: rotate(0);
 }
 
-
-/* Components
-/*
-/* Booking Header */
-
-.navbar-destination {
-  margin-bottom: 15px;
-}
-
-input#destination.form-control {
-  width: auto;
-}
-
-.navbar-search {
-  margin-top: 60px;
-  padding: 0;
-}
-
-.label-destination {
-  margin-top: 19px;
-}
-
-.navbar-search-wrapper {
-  padding-right: 0;
-}
-
-.btn-navbar-search {
-  font-size: 12px;
-  font-weight: 700;
-  text-transform: uppercase;
-  line-height: 14px;
-  height: 105px;
-  padding-right: 25px;
-  padding-left: 25px;
-  margin-bottom: 0;
-}
-
 /* Extra small devices (portrait phones, less than 576px) */
 /* No media query for `xs` since this is the default in Bootstrap */
 
@@ -185,6 +148,22 @@ input#destination.form-control {
   /* Components
   /*
   /* Booking Header */
+  
+  .btn-navbar-search {
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 14px;
+    height: 80px;
+    padding-right: 25px;
+    padding-left: 25px;
+    margin-bottom: 0;
+  }
+
+  .navbar-search {
+    margin-top: 60px;
+    padding: 0;
+  }
 
   .navbar-row-navbar-search {
     border-right: 1px solid #eee;
@@ -198,10 +177,6 @@ input#destination.form-control {
     padding: 8.5px 1rem;
   }
 
-  .label-destination {
-    margin-top: 29px;
-  }
-
   .navbar-search {
     margin-top: 90px;
   }
@@ -211,7 +186,7 @@ input#destination.form-control {
     position: unset;
   }
 
-  .navbar-destination {
+  .navbar-booking {
     width: 250px;
     border-right: 1px solid #eee;
   }
@@ -221,7 +196,7 @@ input#destination.form-control {
     text-align: left;
     padding-top: 0.5rem;
     padding-bottom: 0.5rem;
-    margin: 5px 0;
+    margin: 5px 24px;
     background-color: transparent!important;
     border: none;
   }
@@ -229,61 +204,89 @@ input#destination.form-control {
   .navbar-nav {
     margin-top: -1px;
     margin-bottom: 0; /* Resets margin on navbar dropdown */
+    padding: 0; /* Resets padding on navbar dropdown */
     height: auto; /* Resets vh on small device dropdown */
   }
 
-input#destination.form-control:focus::-webkit-input-placeholder {
-  color: transparent;
-}
-input#destination.form-control::placeholder {
-  color: #c9c9c9;
-  font-weight: 600;
-}
-input#destination.form-control:focus {
-  box-shadow: none;
-}
-input#destination.form-control {
-  width: 240px;
-}
+  label.navbar-label-destination,
+  label.navbar-label-dates,
+  label.navbar-label-adults,
+  label.navbar-label-children,
+  label.navbar-label-rooms {
+    font-size: 11px;
+    font-weight: 500;
+    text-transform: uppercase;
+    line-height: 14px;
+    color: #000;
+    margin-top: 18px;
+  }
 
+  label.navbar-label-destination {
+    margin-left: 20px;
+    margin-bottom: 0;
+  }
+
+  label.navbar-label-dates {
+    margin-left: 13px;
+    margin-bottom: 6px;
+  }
+
+  label.navbar-label-adults,
+  label.navbar-label-children,
+  label.navbar-label-rooms {
+    margin-bottom: 0;
+  }
 
   input#destination.form-control::placeholder,
   input#dates::placeholder,
   input#adults::placeholder,
   input#children::placeholder,
   input#rooms::placeholder {
-    font-size: 16px;
+    font-size: 15px;
   }
+
+  input#destination.form-control:focus::-webkit-input-placeholder,
   input#dates:focus::-webkit-input-placeholder,
   input#adults:focus::-webkit-input-placeholder,
   input#children:focus::-webkit-input-placeholder,
   input#rooms:focus::-webkit-input-placeholder {
     color: transparent;
   }
+
+  input#destination.form-control::placeholder {
+    color: #c9c9c9;
+    font-weight: 400;
+  }
+
   input#dates::placeholder,
   input#adults::placeholder,
   input#children::placeholder,
   input#rooms::placeholder {
-    color: #000;
-    font-weight: 500;
+    color: #c9c9c9;
+    font-weight: 400;
   }
+
   input#adults::placeholder,
   input#children::placeholder,
   input#rooms::placeholder {
     text-align: center;
   }
+
+  input#destination.form-control:focus,
   input#dates:focus,
   input#adults:focus,
   input#children:focus,
   input#rooms:focus {
     box-shadow: none;
   }
+
   input#dates:hover::-webkit-input-placeholder,
   input#adults:hover::-webkit-input-placeholder,
   input#children:hover::-webkit-input-placeholder,
   input#rooms:hover::-webkit-input-placeholder {
     color: #005bf7;
   }
+
   input#adults::-webkit-outer-spin-button,
   input#adults::-webkit-inner-spin-button,
   input#children::-webkit-outer-spin-button,
@@ -293,14 +296,51 @@ input#destination.form-control {
     -webkit-appearance: none;
     margin: 0;
   }
+
+  input#destination.form-control {
+    width: 240px;
+  }
+
+  .navbar-input-destination,
+  .navbar-input-destination:focus,
+  .navbar-input-dates,
+  .navbar-input-dates:focus,
+  .navbar-input-adults,
+  .navbar-input-adults:focus,
+  .navbar-input-children,
+  .navbar-input-children:focus,
+  .navbar-input-rooms,
+  .navbar-input-rooms:focus {
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: -0.03em;
+    color: #005bf7;
+    height: 30px;
+    border: none;
+  }
+
+  .form-group-navbar-search-adults,
+  .form-group-navbar-search-children,
+  .form-group-navbar-search-rooms {
+    width: 99.6px;
+  }
+  .form-group-navbar-search-adults,
+  .form-group-navbar-search-children,
   .form-group-navbar-search {
     margin: 0;
   }
+
+  .form-group-navbar-search-rooms {
+    margin-left: auto;
+    margin-bottom: 0;
+  }
+
   .btn-navbar-search {
     margin-right: 0;
   }
   .navbar-search-wrapper {
-    padding-right: 15px;
+    padding-right: 0;
+    padding-left: 0;
   }
 }
 
@@ -310,8 +350,11 @@ input#destination.form-control {
     min-width: unset;
   }
   .btn-navbar-search {
-    padding-right: 40px;
-    padding-left: 40px;
+    padding-right: 30px;
+    padding-left: 30px;
+  }
+  .form-group-navbar-search-rooms {
+    margin: 0;
   }
 }
 

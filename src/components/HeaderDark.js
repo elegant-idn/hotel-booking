@@ -7,9 +7,9 @@ import logo from './../img/papriika-logo-wordmark-1-white.svg';
 $(document).ready(function() {
   $("button").click(function() {
     $("#navbarBasic").animate( {
-      // Use `height: 'toggle',` to toggle height
+      // height: 'toggle', // Use to toggle height
       opacity: "toggle"
-    }, 300, "swing");
+    }, 300);
   });
 });
 

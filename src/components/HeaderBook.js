@@ -12,16 +12,8 @@ class HeaderBook extends Component {
             <nav className="navbar navbar-search bg-white">
               <form className="w-100">
                 <div className="form-row navbar-row-navbar-search">
-                  <div className="form-group form-group-navbar-search navbar-destination d-inline">
-                    <label htmlFor="destination" className="label-destination"
-                      style={{
-                        fontSize: '12px',
-                        fontWeight: '700',
-                        textTransform: 'uppercase',
-                        lineHeight: '14px',
-                        marginBottom: '0',
-                        marginLeft: '20px'
-                      }}>
+                  <div className="form-group form-group-navbar-search navbar-booking d-inline">
+                    <label htmlFor="destination" className="navbar-label-destination">
                       Where would you like to go?
                     </label>
                     <input 
@@ -31,14 +23,8 @@ class HeaderBook extends Component {
                       maxLength="60"
                       tabIndex="0"
                       id="destination"
-                      className="form-control"
+                      className="form-control navbar-input-destination"
                       style={{
-                        border: 'none',
-                        height: '30px',
-                        color: '#005bf7',
-                        fontSize: '16px',
-                        letterSpacing: '-0.03em',
-                        fontWeight: '500',
                         marginLeft: '7px'
                       }}
                       placeholder="Destination or hotel name"
@@ -53,16 +39,7 @@ class HeaderBook extends Component {
                     style={{
                       borderRight: '1px solid #eee'
                     }}>
-                    <label htmlFor="dates" className="d-block"
-                      style={{
-                        fontSize: '12px',
-                        fontWeight: '700',
-                        textTransform: 'uppercase',
-                        lineHeight: '14px',
-                        marginTop: '29px',
-                        marginBottom: '6px',
-                        marginLeft: '13px'
-                      }}>
+                    <label htmlFor="dates" className="navbar-label-dates d-block">
                       Dates
                     </label>
                     <input
@@ -71,15 +48,7 @@ class HeaderBook extends Component {
                       maxLength="10"
                       tabIndex="0"
                       id="dates"
-                      className="form-control col-md-6 d-inline"
-                      style={{
-                        border: 'none',
-                        height: '30px',
-                        color: '#005bf7',
-                        fontSize: '16px',
-                        letterSpacing: '-0.03em',
-                        fontWeight: '500'
-                      }}
+                      className="form-control navbar-input-dates col-md-6 d-inline"
                       placeholder="Check in"
                       aria-invalid="false"
                       aria-controls="dates-dropdown"
@@ -93,15 +62,7 @@ class HeaderBook extends Component {
                       maxLength="10"
                       tabIndex="0"
                       id="dates"
-                      className="form-control col-md-6 d-inline"
-                      style={{
-                        border: 'none',
-                        height: '30px',
-                        color: '#005bf7',
-                        fontSize: '16px',
-                        letterSpacing: '-0.03em',
-                        fontWeight: '500'
-                      }}
+                      className="form-control navbar-input-dates col-md-6 d-inline"
                       placeholder="Check out"
                       aria-invalid="false"
                       aria-controls="dates-dropdown"
@@ -110,20 +71,11 @@ class HeaderBook extends Component {
                       name="dates"
                     />
                   </div>
-                  <div className="form-group form-group-navbar-search text-center d-none d-lg-block"
+                  <div className="form-group form-group-navbar-search-adults text-center d-none d-lg-block"
                     style={{
-                      width: '99.6px',
                       paddingLeft: '10px'
                     }}>
-                    <label htmlFor="adults"
-                      style={{
-                        fontSize: '12px',
-                        fontWeight: '700',
-                        textTransform: 'uppercase',
-                        lineHeight: '14px',
-                        marginTop: '29px',
-                        marginBottom: '0'
-                      }}>
+                    <label htmlFor="adults" className="navbar-label-adults text-center">
                       Adults
                     </label>
                     <input 
@@ -132,16 +84,7 @@ class HeaderBook extends Component {
                       maxLength="60"
                       tabIndex="0"
                       id="adults"
-                      className="form-control"
-                      style={{
-                        border: 'none',
-                        height: '30px',
-                        color: '#005bf7',
-                        fontSize: '16px',
-                        letterSpacing: '-0.03em',
-                        fontWeight: '500',
-                        textAlign: 'center'
-                      }}
+                      className="form-control navbar-input-adults"
                       placeholder="2"
                       aria-invalid="false"
                       aria-controls="adults-dropdown"
@@ -150,19 +93,8 @@ class HeaderBook extends Component {
                       name="adults"
                     />
                   </div>
-                  <div className="form-group form-group-navbar-search text-center d-none d-lg-block"
-                    style={{
-                      width: '99.6px'
-                    }}>
-                    <label htmlFor="children"
-                      style={{
-                        fontSize: '12px',
-                        fontWeight: '700',
-                        textTransform: 'uppercase',
-                        lineHeight: '14px',
-                        marginTop: '29px',
-                        marginBottom: '0'
-                      }}>
+                  <div className="form-group form-group-navbar-search-children text-center d-none d-lg-block">
+                    <label htmlFor="children" className="navbar-label-children text-center">
                       Children
                     </label>
                     <input 
@@ -171,16 +103,7 @@ class HeaderBook extends Component {
                       maxLength="60"
                       tabIndex="0"
                       id="children"
-                      className="form-control"
-                      style={{
-                        border: 'none',
-                        height: '30px',
-                        color: '#005bf7',
-                        fontSize: '16px',
-                        letterSpacing: '-0.03em',
-                        fontWeight: '500',
-                        textAlign: 'center'
-                      }}
+                      className="form-control navbar-input-children"
                       placeholder="0"
                       aria-invalid="false"
                       aria-controls="children-dropdown"
@@ -189,21 +112,11 @@ class HeaderBook extends Component {
                       name="children"
                     />
                   </div>
-                  <div className="form-group form-group-navbar-search text-center d-none d-md-block" 
+                  <div className="form-group form-group-navbar-search-rooms text-center d-none d-md-block" 
                     style={{
-                      width: '99.6px',
-                      paddingRight: '10px',
-                      marginLeft: 'auto'
+                      paddingRight: '10px'
                     }}>
-                    <label htmlFor="rooms"
-                      style={{
-                        fontSize: '12px',
-                        fontWeight: '700',
-                        textTransform: 'uppercase',
-                        lineHeight: '14px',
-                        marginTop: '29px',
-                        marginBottom: '0'
-                      }}>
+                    <label htmlFor="rooms" className="navbar-label-rooms text-center">
                       Rooms
                     </label>
                     <input 
@@ -212,16 +125,7 @@ class HeaderBook extends Component {
                       maxLength="60"
                       tabIndex="0"
                       id="rooms"
-                      className="form-control"
-                      style={{
-                        border: 'none',
-                        height: '30px',
-                        color: '#005bf7',
-                        fontSize: '16px',
-                        letterSpacing: '-0.03em',
-                        fontWeight: '500',
-                        textAlign: 'center'
-                      }}
+                      className="form-control navbar-input-rooms"
                       placeholder="1"
                       aria-invalid="false"
                       aria-controls="rooms-dropdown"
@@ -230,7 +134,7 @@ class HeaderBook extends Component {
                       name="rooms"
                     />
                   </div>
-                  <div className="form-group form-group-navbar-search ml-auto d-none d-md-block"
+                  <div className="form-group ml-auto d-none d-md-block"
                     style={{
                       padding: '0',
                       marginBottom: '0'
