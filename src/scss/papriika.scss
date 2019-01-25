@@ -47,5 +47,4 @@ $navbar-light-color:                 rgba(#000, 1);
 $navbar-light-hover-color:           rgba(#000, .5);
 $navbar-light-active-color:          primary;
 
-@import 'node_modules/@universelabs/meta/scss/meta.scss';
-@import 'node_modules/bootstrap/scss/bootstrap.scss';
+@import './node_modules/@universelabs/meta/scss/meta.scss';

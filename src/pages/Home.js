@@ -8,11 +8,14 @@ class Home extends Component {
       <div>
         <HeaderDark />
         <HeaderBook />
-        <div className="jumbotron rounded-0"
-        style={{
-          height: '510px',
-          backgroundColor: 'rgb(237, 221, 198)'
-        }}>
+        <div className="jumbotron bg-primary rounded-0"
+          style={{
+            height: '510px',
+            backgroundColor: 'rgb(237, 221, 198)'
+          }}>
+          <div className="col-md-6 offset-md-3 text-center text-white">
+            <h1>Get early access to the world’s best hotels, resorts, clubs & more…</h1>
+          </div>
         </div>
         <div className="jumbotron bg-white rounded-0"
         style={{

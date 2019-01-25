@@ -37,7 +37,7 @@ class HeaderBook extends Component {
                   </div>
                   <div className="form-group col-md-4 col-lg-3 form-group-navbar-search d-none d-md-block"
                     style={{
-                      borderRight: '1px solid #eee'
+                      borderRight: '1px solid #eeeeee'
                     }}>
                     <label htmlFor="dates" className="navbar-label-dates d-block">
                       Dates
