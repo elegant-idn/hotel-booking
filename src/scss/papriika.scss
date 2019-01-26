@@ -1,43 +1,13 @@
-// Grid breakpoints
-//
-// Define the minimum dimensions at which your layout will change,
-// adapting to different screen sizes, for use in media queries.
+// Override Meta after the import
+@import 'node_modules/@universelabs/meta/scss/meta.scss';
 
-$grid-breakpoints: ();
-// stylelint-disable-next-line scss/dollar-variable-default
-$grid-breakpoints: map-merge(
-  (
-    xs: 0,
-    sm: 576px,
-    md: 768px,
-    lg: 992px,
-    xl: 1200px,
-    xxl: 1400px
-  ),
-  $grid-breakpoints
+// Papriika
+
+$theme-colors: (
+  "primary":   #1700c4,
+  "black":     #000,
+  "picotee":   #181846
 );
-
-// Grid containers
-//
-// Define the maximum width of `.container` for different screen sizes.
-
-$container-max-widths: ();
-// stylelint-disable-next-line scss/dollar-variable-default
-$container-max-widths: map-merge(
-  (
-    sm: 540px,
-    md: 720px,
-    lg: 960px,
-    xl: 1140px,
-    xxl: 1360px
-  ),
-  $container-max-widths
-);
-
-.navbar-text {
-  font-size: 15px;
-  font-weight: 600; 
-}
 
 $navbar-dark-color:                 rgba(#fff, 1);
 $navbar-dark-hover-color:           rgba(#fff, .5);
@@ -47,4 +17,7 @@ $navbar-light-color:                 rgba(#000, 1);
 $navbar-light-hover-color:           rgba(#000, .5);
 $navbar-light-active-color:          primary;
 
-@import './node_modules/@universelabs/meta/scss/meta.scss';
+// Override default variables before the import
+// Import Bootstrap and its default variables
+
+@import 'node_modules/bootstrap/scss/bootstrap.scss';

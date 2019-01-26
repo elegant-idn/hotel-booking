@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
-import HeaderDark from '../components/HeaderDark';
+import NavbarDark from '../components/NavbarDark';
 import HeaderBook from '../components/HeaderBook';
 
 class Home extends Component {
   render() {
     return (
       <div>
-        <HeaderDark />
+        <NavbarDark />
         <HeaderBook />
         <div className="jumbotron bg-primary rounded-0"
           style={{

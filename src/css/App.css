@@ -145,31 +145,6 @@ button.navbar-toggler {
     width: 150px;
   }
 
-  /* Components
-  /*
-  /* Booking Header */
-  
-  .btn-navbar-search {
-    font-size: 12px;
-    font-weight: 700;
-    text-transform: uppercase;
-    line-height: 14px;
-    height: 80px;
-    padding-right: 25px;
-    padding-left: 25px;
-    margin-bottom: 0;
-  }
-
-  .navbar-search {
-    margin-top: 60px;
-    padding: 0;
-  }
-
-  .navbar-row-navbar-search {
-    border-right: 1px solid #eee;
-    border-left: 1px solid #eee;
-  }
-
   .nav-link {
     font-size: 12px;
     font-weight: 700;
@@ -177,18 +152,9 @@ button.navbar-toggler {
     padding: 8.5px 1rem;
   }
 
-  .navbar-search {
-    margin-top: 90px;
-  }
-
   div#navbarBasic,
   .navbar-fixed-container {
     position: unset;
-  }
-
-  .navbar-booking {
-    width: 250px;
-    border-right: 1px solid #eee;
   }
 
   .navbar-text {
@@ -197,8 +163,7 @@ button.navbar-toggler {
     padding-top: 0.5rem;
     padding-bottom: 0.5rem;
     margin: 5px 24px;
-    background-color: transparent!important;
-    border: none;
+    border: none; /* Resets border-bottom on navbar dropdown */
   }
 
   .navbar-nav {
@@ -208,11 +173,18 @@ button.navbar-toggler {
     height: auto; /* Resets vh on small device dropdown */
   }
 
+  /* Components
+  /*
+  /* Booking Header */
+
+  .navbar-search {
+    margin-top: 90px;
+    padding-top: 24px;
+    padding-bottom: 48px;
+  }
+
   label.navbar-label-destination,
-  label.navbar-label-dates,
-  label.navbar-label-adults,
-  label.navbar-label-children,
-  label.navbar-label-rooms {
+  label.navbar-label-dates {
     font-size: 11px;
     font-weight: 500;
     text-transform: uppercase;
@@ -223,124 +195,63 @@ button.navbar-toggler {
 
   label.navbar-label-destination {
     margin-left: 20px;
-    margin-bottom: 0;
   }
 
   label.navbar-label-dates {
     margin-left: 13px;
-    margin-bottom: 6px;
   }
 
-  label.navbar-label-adults,
-  label.navbar-label-children,
-  label.navbar-label-rooms {
-    margin-bottom: 0;
-  }
-
-  input#destination.form-control::placeholder,
-  input#dates::placeholder,
-  input#adults::placeholder,
-  input#children::placeholder,
-  input#rooms::placeholder {
-    font-size: 15px;
-  }
-
-  input#destination.form-control:focus::-webkit-input-placeholder,
-  input#dates:focus::-webkit-input-placeholder,
-  input#adults:focus::-webkit-input-placeholder,
-  input#children:focus::-webkit-input-placeholder,
-  input#rooms:focus::-webkit-input-placeholder {
-    color: transparent;
-  }
-
-  input#destination.form-control::placeholder {
-    color: #c9c9c9;
-    font-weight: 400;
-  }
-
-  input#dates::placeholder,
-  input#adults::placeholder,
-  input#children::placeholder,
-  input#rooms::placeholder {
-    color: #c9c9c9;
-    font-weight: 400;
-  }
-
-  input#adults::placeholder,
-  input#children::placeholder,
-  input#rooms::placeholder {
-    text-align: center;
-  }
-
-  input#destination.form-control:focus,
-  input#dates:focus,
-  input#adults:focus,
-  input#children:focus,
-  input#rooms:focus {
-    box-shadow: none;
-  }
-
-  input#dates:hover::-webkit-input-placeholder,
-  input#adults:hover::-webkit-input-placeholder,
-  input#children:hover::-webkit-input-placeholder,
-  input#rooms:hover::-webkit-input-placeholder {
-    color: #005bf7;
-  }
-
-  input#adults::-webkit-outer-spin-button,
-  input#adults::-webkit-inner-spin-button,
-  input#children::-webkit-outer-spin-button,
-  input#children::-webkit-inner-spin-button,
-  input#rooms::-webkit-outer-spin-button,
-  input#rooms::-webkit-inner-spin-button {
-    -webkit-appearance: none;
-    margin: 0;
-  }
-
-  input#destination.form-control {
-    width: 240px;
+  input, .form-control {
+    border-radius: 2px;
   }
 
   .navbar-input-destination,
-  .navbar-input-destination:focus,
-  .navbar-input-dates,
-  .navbar-input-dates:focus,
-  .navbar-input-adults,
-  .navbar-input-adults:focus,
-  .navbar-input-children,
-  .navbar-input-children:focus,
-  .navbar-input-rooms,
-  .navbar-input-rooms:focus {
-    font-size: 16px;
-    font-weight: 500;
-    letter-spacing: -0.03em;
+  .navbar-input-dates {
     color: #005bf7;
-    height: 30px;
-    border: none;
+    letter-spacing: -0.03em;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background-color: #F1F4F7; /* Kayak */
+    border: 3px solid #F1F4F7; /* Kayak */
+  }
+  .navbar-input-destination:hover,
+  .navbar-input-dates:hover {
+    color: #005bf7;
+    background-color: #fff;
+    border: 3px solid #F1F4F7;
+    box-shadow: none;
+    transition: all 0.25s ease-in-out;
+  }
+  .navbar-input-destination:focus,
+  .navbar-input-dates:focus {
+    color: #005bf7;
+    background-color: #fff;
+    border: 3px solid #005bf7;
+    box-shadow: none;
   }
 
-  .form-group-navbar-search-adults,
-  .form-group-navbar-search-children,
-  .form-group-navbar-search-rooms {
-    width: 99.6px;
+  ::-webkit-input-placeholder {
+    color: #393F4A;
+    opacity: 0.5;
+    transition: opacity 0.25s ease-in-out;
   }
-  .form-group-navbar-search-adults,
-  .form-group-navbar-search-children,
-  .form-group-navbar-search {
-    margin: 0;
+  :hover::-webkit-input-placeholder {
+    opacity: 0.25;
+    transition: opacity 0.25s ease-in-out;
   }
-
-  .form-group-navbar-search-rooms {
-    margin-left: auto;
-    margin-bottom: 0;
+  :focus::-webkit-input-placeholder {
+    opacity: 0.25;
+    transition: opacity 0.25s ease-in-out;
+    box-shadow: none;
   }
 
   .btn-navbar-search {
-    margin-right: 0;
-  }
-  .navbar-search-wrapper {
-    padding-right: 0;
-    padding-left: 0;
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 14px;
+    padding: 23px 27px;
+    margin-top: 40px;
   }
 }
 
@@ -348,13 +259,6 @@ button.navbar-toggler {
 @media (min-width: 992px) {
   .navbar-fixed-container {
     min-width: unset;
-  }
-  .btn-navbar-search {
-    padding-right: 30px;
-    padding-left: 30px;
-  }
-  .form-group-navbar-search-rooms {
-    margin: 0;
   }
 }
 

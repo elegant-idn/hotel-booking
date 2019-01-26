@@ -13,10 +13,10 @@ $(document).ready(function() {
   });
 });
 
-class HeaderDark extends Component {
+class NavbarDark extends Component {
   render() {
     return (
-      <nav className="navbar fixed-top navbar-expand-md navbar-dark bg-black">
+      <nav className="navbar fixed-top navbar-expand-md navbar-dark bg-primary">
         <div className="container fixed-top navbar-fixed-container">
           <button className="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarBasic" aria-controls="navbarBasic" aria-expanded="false" aria-label="Toggle navigation">
             <span className="icon-bar top-bar bg-white"></span>
@@ -32,7 +32,7 @@ class HeaderDark extends Component {
               alt="Papriika"
             />
           </a>
-          <div className="collapse navbar-collapse bg-black" id="navbarBasic">
+          <div className="collapse navbar-collapse bg-primary" id="navbarBasic">
             <div className="navbar-text"
               style={{
                 opacity: '1'
@@ -54,4 +54,4 @@ class HeaderDark extends Component {
   }
 }
 
-export default HeaderDark;
+export default NavbarDark;
