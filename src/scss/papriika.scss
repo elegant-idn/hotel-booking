@@ -1,15 +1,25 @@
 // Override Meta after the import
 @import 'node_modules/@universelabs/meta/scss/meta.scss';
 
-
-
 // Papriika
+
+$picotee-900:   #181846;
 
 $theme-colors: (
   "primary":   #1700c4,
   "black":     #000,
-  "picotee":   #181846
 );
+
+$theme-colors: map-merge(
+  (
+    "primary":    $primary,
+    "black":      $black,
+    "picotee":    $picotee-900
+  ),
+  $theme-colors
+);
+
+$body-color:                $picotee-900;
 
 $enable-gradients:                            true;
 
@@ -25,3 +35,264 @@ $navbar-light-active-color:          primary;
 // Import Bootstrap and its default variables
 
 @import 'node_modules/bootstrap/scss/bootstrap.scss';
+
+
+// Complex Type Scaling
+//
+// ALL VALUES: http://bit.ly/meta-scaling-typography-values
+//
+// Create a map of pre-defined typographic scales as found on type-scale.com. 
+// These scales can be passed to the mixin that creates the font sizes by 
+// using their key from the key: value pairs.
+//
+// After the map of scales, two variables are defined.
+// $heading-type-scale-base and $display-type-scale-base, these variables hold 
+// the initial scales that are used from a 0 width viewport or browser and 
+// upward. These variables accept a key from the $type-scales map or can be 
+// passed a unitless value.
+// 
+// By default Bootstraps .display-4 font size is 1rem larger than the h1.  
+$type-scales: (
+  minor-second: 1.067,
+  major-second: 1.125,
+  minor-third: 1.2,
+  mid-third: 1.215,
+  major-third: 1.25,
+  perfect-fourth: 1.333,
+  augmented-fourth: 1.414,
+  perfect-fifth: 1.5,
+  golden-ratio: 1.618
+);
+
+$heading-type-scale-base: major-second;
+$display-type-scale-base: major-second;
+$lead-type-scale-base: major-second;
+$blockquote-type-scale-base: major-second;
+
+// Variable base settings
+//
+// The variable base settings are set manually.
+$font-size-heading-base:       1.0625rem;
+$line-height-heading-base:          1.45;
+$font-size-lead-base:            1.25rem;
+$line-height-lead-base:             1.45;
+$font-size-blockquote-base:      1.25rem;
+$line-height-blockquote-base:       1.45;
+$margin-top-base:                   2.15;
+$margin-bottom-base:                1rem;
+$paragraph-letter-spacing:             0;
+
+
+// Function to Check for Valid Type Scale Value
+//
+// The function prevents restriction of values in the Sass map above. It 
+// checks if the value passed to the mixin is one of the values in the 
+// $type-scales map or it must be a unitless value to create the type scale.
+@function check-type-scale-value($scale) {
+  
+  // Check $scale against the values in $type-scales.
+  @if map-has-key($type-scales, $scale) {
+    
+      // If the value of $scale is defined in $type-scales, 
+      // return the value of $scale.
+      @return map-get($type-scales, $scale);
+    
+  // If the value of $scale is not defined in the $type-scales map, check if 
+  // the value is a number and that the number is a unitless value.
+  } @else if type-of($scale) == number and unitless($scale) {
+    
+    // If the value of $scale is a unitless number, return the number.
+    @return $scale;
+    
+  // Lastly, should the value passed to $scale be neither found in the 
+  // $type-scales map nor a unitless number, throw an error.
+  } @else {
+    
+    // Sass error.
+    @error "Sorry, `#{$scale}` is not a unitless number value or a pre-defined key in the $type-scales map.";
+  }
+}
+
+// Mixins That Create Font Sizes
+//
+// Below are two mixin's that do very similar things.
+// They both take a type scale value either from the $type-scales
+// map or a custom unitless number.
+//
+// From there it uses the checkTypeScaleValue() function to 
+// evaluate the $scale value and then create the font sizes.
+@mixin create-heading-type-scale($scale) {
+  
+  // Check the $scale value and store in a variable to be 
+  // used when calculating the font sizes.
+  $the-heading-type-scale: check-type-scale-value($scale);
+  
+  // Starting from h6, multiply each previous value by the scale
+  // to get the next font size
+  $font-size-h6: $font-size-heading-base * $the-heading-type-scale;
+  $font-size-h5: $font-size-h6 * $the-heading-type-scale;
+  $font-size-h4: $font-size-h5 * $the-heading-type-scale;
+  $font-size-h3: $font-size-h4 * $the-heading-type-scale;
+  $font-size-h2: $font-size-h3 * $the-heading-type-scale;
+  $font-size-h1: $font-size-h2 * $the-heading-type-scale;
+  // $font-size-display-base is made global to allow for accessing the 
+  // varibale in the next mixin.
+  $font-size-display-base : $font-size-h1 !global;
+  
+  // Add the created font sizes and margin-top to the elements and classes
+  h1, .h1 {
+    font-size: $font-size-h1;
+    line-height: $line-height-heading-base - .25;
+    margin-bottom: $margin-bottom-base;
+  }
+  h2, .h2 {
+    font-size: $font-size-h2;
+    line-height: $line-height-heading-base - .2;
+    margin-bottom: $margin-bottom-base;
+  }
+  h3, .h3 {
+    font-size: $font-size-h3;
+    line-height: $line-height-heading-base - .15;
+    margin-bottom: $margin-bottom-base;
+  }
+  h4, .h4 {
+    font-size: $font-size-h4;
+    line-height: $line-height-heading-base - .1;
+    margin-bottom: $margin-bottom-base;
+  }
+  h5, .h5 {
+    font-size: $font-size-h5;
+    line-height: $line-height-heading-base - .05;
+    margin-bottom: $margin-bottom-base;
+  }
+  h6, .h6 {
+    font-size: $font-size-h6;
+    line-height: $line-height-heading-base; // Variable base setting
+    margin-bottom: $margin-bottom-base;
+  }
+}
+
+@mixin create-display-type-scale($scale) {
+
+  // Store default type scale in a variable for calculations
+  $the-display-type-scale: check-type-scale-value($scale);
+  
+  // Create variables to reference the previous font size
+  $font-size-display-4: $font-size-display-base + $font-size-base;
+  $font-size-display-3: $font-size-display-4 * $the-display-type-scale;
+  $font-size-display-2: $font-size-display-3 * $the-display-type-scale;
+  $font-size-display-1: $font-size-display-2 * $the-display-type-scale;
+
+  // Add the created font sizes to the elements and classes
+  .display-4 {
+    font-size: $font-size-display-4;
+    margin-bottom: 1.75rem;
+  }
+  .display-3 {
+    font-size: $font-size-display-3;
+    margin-bottom: 1.75rem;
+  }
+  .display-2 {
+    font-size: $font-size-display-2;
+    margin-bottom: 1.75rem;
+  }
+  .display-1 {
+    font-size: $font-size-display-1;
+    margin-bottom: 1.75rem;
+  }
+}
+
+@mixin create-lead-type-scale($scale) {
+
+  // Store default type scale in a variable for calculations
+  $the-lead-type-scale: check-type-scale-value($scale);
+  
+  // Create variables to reference the previous font size
+  $font-size-lead-md: $font-size-lead-base * $the-lead-type-scale;
+  $font-size-lead-lg: $font-size-lead-md * $the-lead-type-scale;
+
+  // Add the created font sizes to the elements and classes
+  .lead {
+    font-size: $font-size-lead-base;
+    line-height: $line-height-lead-base; // Variable base setting
+    margin-bottom: $margin-bottom-base;
+  }
+  .lead-md {
+    font-size: $font-size-lead-md;
+    line-height: $line-height-lead-base - .05; // Scaled down by .05
+    margin-bottom: $margin-bottom-base;
+  }
+  .lead-lg {
+    font-size: $font-size-lead-lg;
+    line-height: $line-height-lead-base - .1; // Scaled down by .05
+    margin-bottom: $margin-bottom-base;
+  }
+}
+
+@mixin create-blockquote-type-scale($scale) {
+
+  // Store default type scale in a variable for calculations
+  $the-blockquote-type-scale: check-type-scale-value($scale);
+  
+  // Create variables to reference the previous font size
+  $font-size-blockquote-md: $font-size-blockquote-base * $the-blockquote-type-scale;
+  $font-size-blockquote-lg: $font-size-blockquote-md * $the-blockquote-type-scale;
+
+  // Add the created font sizes to the elements and classes
+  .blockquote {
+    font-size: $font-size-blockquote-base;
+    line-height: $line-height-blockquote-base; // Variable base setting
+    margin-bottom: $margin-bottom-base;
+  }
+  .blockquote-md {
+    font-size: $font-size-blockquote-md;
+    line-height: $line-height-blockquote-base - .05; // Scaled down by .05
+    margin-bottom: $margin-bottom-base;
+  }
+  .blockquote-lg {
+    font-size: $font-size-blockquote-lg;
+    line-height: $line-height-blockquote-base - .1; // Scaled down by .05
+    margin-bottom: $margin-bottom-base;
+  }
+}
+
+// The base heading and display font sizes to be used from 0px width viewports 
+// and up. These can be adjusted through the use of media queries by simply 
+// using the mixin again at your desired breakpoint
+//
+// Set the root font size in px on the html element to 14px, so that it is 2px 
+// lower that the aprox default for browsers. Then the font size is bumped up 
+// 2px at the md and then lg breakpoints.
+html, body {
+  
+  // Base values
+  font-size: 15px;
+  line-height: 1.75;
+  
+  p {
+    letter-spacing: $paragraph-letter-spacing;
+  }
+
+  @media (min-width: 768px) {
+    font-size: 16px;
+  }
+
+  @media (min-width: 992px) {
+    font-size: 17px;
+  }
+
+}
+
+// Define the heading and display font sizes
+@include create-heading-type-scale($heading-type-scale-base);
+@include create-display-type-scale($display-type-scale-base);
+@include create-lead-type-scale($lead-type-scale-base);
+@include create-blockquote-type-scale($blockquote-type-scale-base);
+
+// At the Bootstrap md breakpoint, adjust the heading dont sizes.
+@media (min-width: 992px) {
+  @include create-heading-type-scale(minor-third);
+  @include create-display-type-scale(minor-third);
+  @include create-lead-type-scale(minor-third);
+  @include create-blockquote-type-scale(minor-third);
+}

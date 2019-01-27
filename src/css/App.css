@@ -2,9 +2,8 @@
 
 /* Navbar */
 
-.navbar-dark,
-.navbar-light {
-  height: 60px;
+.navbar.fixed-top {
+  height: 50px;
 }
 
 .navbar-brand {
@@ -128,12 +127,15 @@ button.navbar-toggler {
 
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
+
+  h3 {
+    font-weight: 800;
+  }
   
   /* Navbar */
   
-  .navbar-dark,
-  .navbar-light {
-    height: 90px;
+  .navbar.fixed-top {
+    height: 60px;
   }
 
   .navbar-brand {
@@ -189,74 +191,64 @@ button.navbar-toggler {
 
   label.navbar-label-destination,
   label.navbar-label-dates {
-    font-size: 11px;
-    font-weight: 500;
+    font-size: 12px;
+    font-weight: 700;
     text-transform: uppercase;
     line-height: 14px;
     color: #000;
     margin-top: 18px;
-  }
-
-  label.navbar-label-destination {
-    margin-left: 20px;
-  }
-
-  label.navbar-label-dates {
-    margin-left: 13px;
+    letter-spacing: .03em;
   }
 
   input, .form-control {
     border-radius: 2px;
   }
 
-  .navbar-input-destination,
-  .navbar-input-dates,
+  .form-control-navbar-booking,
   .form-control[readonly] {
-    color: #005bf7;
+    color: #000;
     letter-spacing: -0.03em;
-    padding-top: 30px;
-    padding-bottom: 30px;
-    background-color: #F1F4F7; /* Kayak */
-    border: 3px solid #F1F4F7; /* Kayak */
+    padding: 30px 20px;
+    background-color: #F1F4F7; /* Light Steel */
+    border: 3px solid #F1F4F7; /* Light Steel */
+
   }
-  .navbar-input-destination:hover,
-  .navbar-input-dates:hover {
-    color: #005bf7;
+  .form-control-navbar-booking:hover {
     background-color: #fff;
     border: 3px solid #F1F4F7;
     box-shadow: none;
     transition: all 0.25s ease-in-out;
   }
-  .navbar-input-destination:focus,
-  .navbar-input-dates:focus {
-    color: #005bf7;
+  .form-control-navbar-booking:focus {
+    color: #000;
     background-color: #fff;
-    border: 3px solid #005bf7;
+    border: 3px solid #1300a3;
     box-shadow: none;
   }
 
-  ::-webkit-input-placeholder {
-    color: #393F4A;
-    opacity: 0.5;
+  .form-control-navbar-booking::-webkit-input-placeholder {
+    color: #000;;
     transition: opacity 0.25s ease-in-out;
   }
   :hover::-webkit-input-placeholder {
-    opacity: 0.25;
+    color: #000;
     transition: opacity 0.25s ease-in-out;
   }
   :focus::-webkit-input-placeholder {
+    color: #000;
     opacity: 0.25;
     transition: opacity 0.25s ease-in-out;
     box-shadow: none;
   }
 
   .btn-navbar-search {
-    font-size: 12px;
+    font-size: 13px;
     font-weight: 700;
     text-transform: uppercase;
     line-height: 14px;
-    padding: 23px 27px;
-    margin-top: 40px;
+    letter-spacing: .03em;
+    padding: 25px 40px;
+    margin-top: 41px;
   }
 }
 
