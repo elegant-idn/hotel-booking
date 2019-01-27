@@ -210,7 +210,8 @@ button.navbar-toggler {
   }
 
   .navbar-input-destination,
-  .navbar-input-dates {
+  .navbar-input-dates,
+  .form-control[readonly] {
     color: #005bf7;
     letter-spacing: -0.03em;
     padding-top: 30px;

@@ -1,42 +1,43 @@
 import React, { Component } from 'react';
 import $ from 'jquery';
+import 'jquery-ui-dist/jquery-ui.min.js';
 import logo from './../img/papriika-logo-wordmark-1-white.svg';
 
 // Value equal to `.collapsing` class is set to none.
 
 
-// $(document).ready( function() {
-//     var state = true;
-//     $( "button" ).on( "click", function() {
-//       if ( state ) {
-//         $( "#navbarBasic" ).animate({
-//           opacity: "1",
-//           backgroundColor: "#aa0000",
-//           color: "#fff",
-//           width: 500
-//         }, 1000 );
-//       } else {
-//         $( "#navbarBasic" ).animate({
-//           opacity: "0",
-//           backgroundColor: "#fff",
-//           color: "#000",
-//           width: 240
-//         }, 1000 );
-//       }
-//       state = !state;
-//     });
-//   } );
+$(document).ready( function() {
+    var state = true;
+    $( "button" ).on( "click", function() {
+      if ( state ) {
+        $( "#navbarBasic" ).animate({
+          opacity: "0",
+          backgroundColor: "#aa0000",
+          color: "#fff",
+          width: 500
+        }, 1000 );
+      } else {
+        $( "#navbarBasic" ).animate({
+          opacity: "1",
+          backgroundColor: "#fff",
+          color: "#000",
+          width: 240
+        }, 1000 );
+      }
+      state = !state;
+    });
+  } );
 
 
-$(document).ready(function() {
-  $("button").click(function() {
-    $("#navbarBasic").animate( {
-      // height: 'toggle', // Use to toggle height
-      opacity: "toggle",
-      backgroundColor: "red"
-    }, 300);
-  });
-});
+// $(document).ready(function() {
+//   $("button").click(function() {
+//     $("#navbarBasic").animate( {
+//       // height: 'toggle', // Use to toggle height
+//       opacity: "toggle",
+//       backgroundColor: "red"
+//     }, 300);
+//   });
+// });
 
 class NavbarDark extends Component {
   render() {

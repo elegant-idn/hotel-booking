@@ -1,7 +1,22 @@
 import React, { Component } from 'react';
+import $ from 'jquery';
+import 'jquery-ui-dist/jquery-ui.min.js';
+import 'jquery-ui-dist/jquery-ui.min.css';
+import 'flatpickr/dist/themes/airbnb.css';
+import Flatpickr from 'react-flatpickr';
+
+
 
 class HeaderBook extends Component {
+  constructor() {
+    super();
+ 
+    this.state = {
+      date: new Date()
+    };
+  }
   render() {
+    const { date } = this.state;
     return (
       <div className="container-fluid bg-white d-none d-md-block">
         <div className="row">
@@ -48,12 +63,7 @@ class HeaderBook extends Component {
                     <label htmlFor="dates" className="navbar-label-dates d-block">
                       Dates
                     </label>
-                    <input
-                      type="text"
-                      autoComplete="off"
-                      maxLength="10"
-                      tabIndex="0"
-                      id="dates"
+                    <Flatpickr
                       className="form-control navbar-input-dates"
                       placeholder="Check in"
                       aria-invalid="false"
@@ -61,8 +71,16 @@ class HeaderBook extends Component {
                       aria-label="Check in date"
                       aria-activedescendant="dates-dropdown-item-0"
                       name="dates"
+                      value={[date, new Date().fp_incr(2)]}
+                      options={{ 
+                        mode: "range",
+                        minDate: "today",
+                        dateFormat: "M j, Y"
+                      }}
+                      onChange={(date, str) => { console.info(str); }}
                     />
                   </div>
+                  
                   <div className="form-group">
                     <button type="submit" className="btn btn-primary btn-navbar-search">
                       Search
