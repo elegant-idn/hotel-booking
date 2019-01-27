@@ -17,10 +17,13 @@ class NavbarBooking extends Component {
       <div className="container-fluid bg-white d-none d-md-block">
         <div className="row">
           <div className="container navbar-search bg-white">
-            <h3>Access over 2,300 of the world’s best hotels.</h3>
+            <h3>Access to over 2,300 of the world’s best hotels.</h3>
             <form>
               <div className="form-row">
-                <div className="col">
+                <div className="col"
+                  style={{
+                    paddingRight: '0'
+                  }}>
                   <label htmlFor="destination" className="navbar-label-destination">
                     Where would you like to go?
                   </label>
@@ -55,7 +58,10 @@ class NavbarBooking extends Component {
                     <option value="Seoul, Korea"></option>
                   </datalist>
                 </div>
-                <div className="col">
+                <div className="col"
+                  style={{
+                    paddingRight: '0'
+                  }}>
                   <label htmlFor="dates" className="navbar-label-dates d-block">
                     Dates
                   </label>
@@ -76,7 +82,10 @@ class NavbarBooking extends Component {
                     onChange={(date, str) => { console.info(str); }}
                   />
                 </div>
-                <div className="px-1">
+                <div className="px-1"
+                  style={{
+                    paddingRight: '0'
+                  }}>
                   <button type="submit" className="btn btn-primary btn-navbar-search">
                     Search
                   </button>

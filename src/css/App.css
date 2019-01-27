@@ -3,7 +3,12 @@
 /* Navbar */
 
 .navbar.fixed-top {
-  height: 50px;
+  height: 46px;
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#181846+0,1700c4+100 */
+  background: #181846;
+  background: -moz-linear-gradient(45deg, #181846 0%, #1700c4 100%);
+  background: -webkit-linear-gradient(45deg, #181846 0%,#1700c4 100%);
+  background: linear-gradient(45deg, #181846 0%,#1700c4 100%);
 }
 
 .navbar-brand {
@@ -18,14 +23,14 @@
 
 /* Custom class required for navbars with fixed-* & container classes */
 .navbar-fixed-container {
-  top: 9px;
+  top: 0;
   min-width: 100%;
 }
 
 .navbar-nav {
   padding-right: 40px;
   padding-left: 40px;
-  margin: 16px 0;
+  margin: 10px 0;
   height: 100vh;
 }
 
@@ -40,7 +45,7 @@ div#navbarBasic {
 }
 
 .nav-item {
-  border-bottom: 1px solid #212121;
+  border-bottom: 1px solid rgba(255,255,255,.15);
 }
 
 li.nav-item:last-child {
@@ -54,16 +59,17 @@ li.nav-item:last-child {
 }
 
 .navbar-text {
+  font-size: 15px;
   width: 100%;
   text-align: center;
-  margin-top: 65px;
+  margin-top: 60px;
   padding-top: 3px;
   padding-bottom: 8px;
 }
 
 button.navbar-toggler { 
   position: fixed; /* Prevents button from moving */
-  top: 10px;
+  top: 3px;
   left: 4px;
   outline: none; /* Removes blue outline */
   border: none; /* Removes border outline */
@@ -135,7 +141,12 @@ button.navbar-toggler {
   /* Navbar */
   
   .navbar.fixed-top {
-    height: 60px;
+    height: 46px;
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#181846+0,1700c4+100 */
+    background: #181846;
+    background: -moz-linear-gradient(45deg, #181846 0%, #1700c4 100%);
+    background: -webkit-linear-gradient(45deg, #181846 0%,#1700c4 100%);
+    background: linear-gradient(45deg, #181846 0%,#1700c4 100%);
   }
 
   .navbar-brand {
@@ -144,11 +155,7 @@ button.navbar-toggler {
   }
 
   .navbar-brand-img {
-    width: 125px;
-  }
-
-  .brand-img-light {
-    width: 150px;
+    width: 115px;
   }
 
   .nav-link {
@@ -184,8 +191,7 @@ button.navbar-toggler {
   /* Booking Header */
 
   .navbar-search {
-    margin-top: 90px;
-    padding-top: 24px;
+    padding-top: 32px;
     padding-bottom: 48px;
   }
 
@@ -201,7 +207,7 @@ button.navbar-toggler {
   }
 
   input, .form-control {
-    border-radius: 2px;
+    border-radius: 4px;
   }
 
   .form-control-navbar-booking,

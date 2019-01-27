@@ -5,13 +5,14 @@ import NavbarBooking from '../components/NavbarBooking';
 class Home extends Component {
   render() {
     return (
-      <div>
+      <div style={{
+            marginTop: '46px'
+          }}>
         <NavbarDark />
         <NavbarBooking />
-        <div className="jumbotron bg-primary rounded-0"
+        <div className="jumbotron bg-danger rounded-0"
           style={{
-            height: '510px',
-            backgroundColor: 'rgb(237, 221, 198)'
+            height: '510px'
           }}>
           <div className="col-md-6 offset-md-3 text-center text-white">
             <h1>Get early access to the world’s best hotels, resorts, clubs & more…</h1>

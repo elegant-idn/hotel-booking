@@ -5,45 +5,23 @@ import logo from './../img/papriika-logo-wordmark-1-white.svg';
 
 // Value equal to `.collapsing` class is set to none.
 
-
 $(document).ready( function() {
-    var state = true;
-    $( "button" ).on( "click", function() {
-      if ( state ) {
-        $( "#navbarBasic" ).animate({
-          opacity: "0",
-          backgroundColor: "#aa0000",
-          color: "#fff",
-          width: 500
-        }, 1000 );
-      } else {
-        $( "#navbarBasic" ).animate({
-          opacity: "1",
-          backgroundColor: "#fff",
-          color: "#000",
-          width: 240
-        }, 1000 );
-      }
-      state = !state;
-    });
-  } );
-
-
-// $(document).ready(function() {
-//   $("button").click(function() {
-//     $("#navbarBasic").animate( {
-//       // height: 'toggle', // Use to toggle height
-//       opacity: "toggle",
-//       backgroundColor: "red"
-//     }, 300);
-//   });
-// });
+  $("button").click( function() {
+    $("#navbarBasic").animate( {
+      opacity: "toggle",
+      backgroundColor: "#1700c4"
+    }, 300);
+  });
+});
 
 class NavbarDark extends Component {
   render() {
     return (
-      <nav className="navbar fixed-top navbar-expand-md navbar-dark bg-gradient-primary">
-        <div className="container fixed-top navbar-fixed-container">
+      <nav className="navbar fixed-top navbar-expand-md navbar-dark">
+        <div className="container-fluid fixed-top navbar-fixed-container"
+          style={{
+            maxWidth: '1400px'
+          }}>
           <button className="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarBasic" aria-controls="navbarBasic" aria-expanded="false" aria-label="Toggle navigation">
             <span className="icon-bar top-bar bg-white"></span>
             <span className="icon-bar bottom-bar bg-white"></span>       

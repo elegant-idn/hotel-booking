@@ -12,15 +12,15 @@ span.flatpickr-day.startRange, span.flatpickr-day.prevMonthDay.startRange, span.
 }
 
 span.flatpickr-day.today:not(.selected), span.flatpickr-day.prevMonthDay.today:not(.selected), span.flatpickr-day.nextMonthDay.today:not(.selected) {
-  background-color: #FF0000;
-  border-color: #FF0000;
-  border-bottom-color: #FF0000;
+  background-color: #FF0000; /* Danger Red */
+  border-color: #FF0000; /* Danger Red */
+  border-bottom-color: #FF0000; /* Danger Red */
   color: #fff;
 }
 
 span.flatpickr-day.today:not(.selected):hover, span.flatpickr-day.prevMonthDay.today:not(.selected):hover, span.flatpickr-day.nextMonthDay.today:not(.selected):hover {
-  border: 1px solid #C41700;
-  background-color: #C41700;
+  border: 1px solid #C41700; /* Red 700 */
+  background-color: #C41700; /* Red 700 */
 }
 
 .flatpickr-day {
