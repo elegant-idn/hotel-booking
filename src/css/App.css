@@ -75,6 +75,10 @@ button.navbar-toggler {
   z-index: 2000;
 }
 
+/*.navbar-collapse.collapse.show {
+  background-color: black;
+}*/
+
 /* Icon Toggler */
 
 .icon-bar {
@@ -87,7 +91,7 @@ button.navbar-toggler {
  
 .navbar-toggler {
   border: none;
-  background: transparent !important;
+  background: transparent;
 }
 
 .navbar-toggler .top-bar {
