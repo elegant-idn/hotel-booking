@@ -23,6 +23,13 @@ class Home extends Component {
             padding: '0',
             marginBottom: '0'
           }}>
+          <div className="container d-sm-block d-md-none text-center"> 
+            <h2 className="text-white pt-9"
+              style={{
+                zIndex: '5000',
+                Background: 'transparent'
+              }}>Access over 2,300 of the world’s best hotels.</h2>
+          </div>
           <div className="d-none d-md-block col-md-6 col-xl-4 ml-auto text-white hero-box-content"
             style={{
               height: '540px'

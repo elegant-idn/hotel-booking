@@ -17,7 +17,7 @@ class NavbarBooking extends Component {
       <div className="container-fluid bg-white d-none d-md-block">
         <div className="row">
           <div className="container navbar-booking bg-white">
-            <h3>Access 2,300 of the world’s best curated hotels.</h3>
+            <h3>Access over 2,300 of the world’s best hotels.</h3>
             <form>
               <div className="form-row">
                 <div className="col"
