@@ -5,7 +5,10 @@ import NavbarBooking from '../components/NavbarBooking';
 import Background from './../img/hotels/hotel-img-waldorf-astoria-beijing.jpg';
 
 const Div = styled.div`
-    background-image: url(${Background});
+    background: linear-gradient(
+      rgba(0, 0, 0, 0.45), 
+      rgba(0, 0, 0, 0.45)
+    ), url(${Background});
     background-size: cover;
     background-position: center;
 `;

@@ -1,5 +1,10 @@
 /* App.css */
 
+/* Background Image Overlay */
+
+
+
+
 /* Navbar */
 
 .navbar.fixed-top {
@@ -37,7 +42,7 @@
 
 div#navbarBasic {
   top: 0;
-  position: fixed;
+  position: absolute;
   width: 100%;
 }
 
@@ -138,32 +143,6 @@ button.navbar-toggler {
   background: -moz-linear-gradient(45deg, #181846 0%, #1700c4 100%);
   background: -webkit-linear-gradient(45deg, #181846 0%,#1700c4 100%);
   background: linear-gradient(45deg, #181846 0%,#1700c4 100%);
-}
-
-/* Background Image Overlay */
-
-.overlay {
-  position: relative;
-}
-.overlay:before {
-  position: absolute;
-  content:" ";
-  top:0;
-  left:0;
-  width:100%;
-  height:100%;
-  display: none;
-  z-index:0;
-  display: block;
-}
-
-.overlay-dark::before {
-  background-color: rgba(0,0,0,0.3);
-}
-
-.box * {
-    position: relative;
-    /* hack */
 }
 
 /* Extra small devices (portrait phones, less than 576px) */
