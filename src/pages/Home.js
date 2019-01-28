@@ -10,18 +10,21 @@ class Home extends Component {
           }}>
         <NavbarDark />
         <NavbarBooking />
-        <div className="jumbotron bg-danger rounded-0"
-          style={{
-            height: '510px'
-          }}>
-          <div className="col-md-6 offset-md-3 text-center text-white">
-            <h1>Get early access to the world’s best hotels, resorts, clubs & more…</h1>
+        <div className="jumbotron d-flex align-items-center rounded-0">
+          <div className="container col-xl-8 offset-xl-2 text-center text-white ">
+            <h1 className="display-4"
+              style={{
+                fontWeight: '800'
+              }}>
+              Coming soon..
+            </h1>
+            <h1 
+              style={{
+                fontWeight: '800'
+              }}>
+              Access to the world’s best hotels, resorts, clubs & more…
+            </h1>
           </div>
-        </div>
-        <div className="jumbotron bg-white rounded-0"
-        style={{
-          height: '550px'
-        }}>
         </div>
       </div>
     );

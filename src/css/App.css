@@ -125,6 +125,14 @@ button.navbar-toggler {
   transform: rotate(0);
 }
 
+.jumbotron {
+  height: 360px;
+  background: #181846;
+  background: -moz-linear-gradient(45deg, #181846 0%, #1700c4 100%);
+  background: -webkit-linear-gradient(45deg, #181846 0%,#1700c4 100%);
+  background: linear-gradient(45deg, #181846 0%,#1700c4 100%);
+}
+
 /* Extra small devices (portrait phones, less than 576px) */
 /* No media query for `xs` since this is the default in Bootstrap */
 
@@ -133,6 +141,10 @@ button.navbar-toggler {
 
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
+
+  .jumbotron {
+    height: 540px;
+  }
 
   h3 {
     font-weight: 800;
