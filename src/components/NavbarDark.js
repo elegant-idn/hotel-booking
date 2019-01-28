@@ -9,7 +9,7 @@ $(document).ready( function() {
   $("button").click( function() {
     $("#navbarBasic").animate( {
       opacity: "toggle",
-      backgroundColor: "#1700c4"
+      backgroundColor: "#212121"
     }, 300);
   });
 });
@@ -17,7 +17,7 @@ $(document).ready( function() {
 class NavbarDark extends Component {
   render() {
     return (
-      <nav className="navbar fixed-top navbar-expand-md navbar-dark">
+      <nav className="navbar fixed-top navbar-expand-md navbar-dark bg-black">
         <div className="container-fluid fixed-top navbar-fixed-container"
           style={{
             maxWidth: '1400px'
