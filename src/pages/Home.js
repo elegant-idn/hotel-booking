@@ -7,6 +7,7 @@ import Background from './../img/hotels/hotel-img-waldorf-astoria-beijing.jpg';
 const Div = styled.div`
     background-image: url(${Background});
     background-size: cover;
+    background-position: center;
 `;
 
 class Home extends Component {
@@ -17,20 +18,32 @@ class Home extends Component {
           }}>
         <NavbarDark />
         <NavbarBooking />
-        <Div className="jumbotron d-flex align-items-center rounded-0 overlay overlay-dark">
-          <div className="container col-xl-8 offset-xl-2 text-center text-white">
-            <h1 className="display-4"
-              style={{
-                fontWeight: '800'
-              }}>
-              Coming soon..
-            </h1>
-            <h1 
-              style={{
-                fontWeight: '800'
-              }}>
-              Access to the world’s best hotels, resorts, clubs & more…
-            </h1>
+        <Div className="jumbotron rounded-0 overlay overlay-dark"
+          style={{
+            padding: '0',
+            marginBottom: '0'
+          }}>
+          <div className="d-none d-md-block col-md-6 col-xl-4 ml-auto text-white hero-box-content"
+            style={{
+              height: '540px'
+            }}>
+            <div className="container text-center p-5">
+              <p className="d-md-block">
+                <span className="badge"
+                  style={{
+                    color: '#1700c4',
+                    backgroundColor: '#fff',
+                    borderRadius: '0',
+                    textTransform: 'uppercase',
+                    fontSize: '12px',
+                    fontWeight: '700',
+                    padding: '10px 25px'
+                  }}>New!</span>
+              </p>
+              <p className="lead-md d-md-block">
+                Waldorf Astoria, Shanghai, China
+              </p>
+            </div>
           </div>
         </Div>
       </div>
