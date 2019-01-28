@@ -21,9 +21,9 @@ class NavbarDark extends Component {
         style={{
           backgroundColor: '#131417'
         }}>
-        <div className="container-fluid fixed-top navbar-fixed-container"
+        <div className="container fixed-top navbar-fixed-container"
           style={{
-            maxWidth: '1400px'
+            // maxWidth: '1400px'
           }}>
           <a href="/" className="navbar-brand">
             <img 
@@ -44,12 +44,14 @@ class NavbarDark extends Component {
               <li className="nav-item d-md-none">
                 <a className="nav-link" href="/">Home</a>
               </li>
+              {/*
               <li className="nav-item">
                 <a className="nav-link" href="/">About</a>
               </li>
               <li className="nav-item">
                 <a className="nav-link" href="/">Contact</a>
               </li>
+            */}
             </ul>
           </div>
         </div>
