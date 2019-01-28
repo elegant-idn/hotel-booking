@@ -38,7 +38,7 @@ class NavbarDark extends Component {
           </button>
           <div className="collapse navbar-collapse" id="navbarBasic">
             <span className="navbar-text navbar-text-tagline">
-              The world’s best hotels, hand curated
+              The world’s best hotels, hand curated.
             </span>
             <ul className="navbar-nav ml-auto">
               <li className="nav-item d-md-none">
