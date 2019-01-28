@@ -157,8 +157,13 @@ button.navbar-toggler {
   display: block;
 }
 
-.overlay-dark:before {
+.overlay-dark::before {
   background-color: rgba(0,0,0,0.3);
+}
+
+.box * {
+    position: relative;
+    /* hack */
 }
 
 /* Extra small devices (portrait phones, less than 576px) */

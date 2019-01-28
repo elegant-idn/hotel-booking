@@ -18,7 +18,7 @@ class Home extends Component {
           }}>
         <NavbarDark />
         <NavbarBooking />
-        <Div className="jumbotron rounded-0 overlay overlay-dark"
+        <Div className="jumbotron rounded-0 box overlay overlay-dark"
           style={{
             padding: '0',
             marginBottom: '0'
