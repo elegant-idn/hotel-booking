@@ -1,10 +1,5 @@
 /* App.css */
 
-/* Background Image Overlay */
-
-
-
-
 /* Navbar */
 
 .navbar.fixed-top {
@@ -134,15 +129,8 @@ button.navbar-toggler {
   transform: rotate(0);
 }
 
-.jumbotron {
+.hero-container {
   height: 480px;
-}
-
-.hero-box-content {
-  background: #181846;
-  background: -moz-linear-gradient(45deg, #181846 0%, #1700c4 100%);
-  background: -webkit-linear-gradient(45deg, #181846 0%,#1700c4 100%);
-  background: linear-gradient(45deg, #181846 0%,#1700c4 100%);
 }
 
 /* Extra small devices (portrait phones, less than 576px) */
@@ -154,7 +142,7 @@ button.navbar-toggler {
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
 
-  .jumbotron {
+  .hero-container {
     height: 540px;
   }
 

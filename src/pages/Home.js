@@ -21,19 +21,19 @@ class Home extends Component {
           }}>
         <NavbarDark />
         <NavbarBooking />
-        <Div className="jumbotron rounded-0 box overlay overlay-dark"
+        <Div className="container hero-container rounded-0"
           style={{
             padding: '0',
             marginBottom: '0'
           }}>
           <div className="container d-sm-block d-md-none text-center"> 
-            <h2 className="text-white pt-9"
+            <h2 className="text-white pt-9 pb-9"
               style={{
                 zIndex: '5000',
                 Background: 'transparent'
               }}>Access over 2,300 of the world’s best hotels.</h2>
           </div>
-          <div className="d-none d-md-block col-md-6 col-xl-4 ml-auto text-white hero-box-content"
+          <div className="mx-auto text-white"
             style={{
               height: '540px'
             }}>
@@ -41,7 +41,7 @@ class Home extends Component {
               <p className="d-md-block">
                 <span className="badge"
                   style={{
-                    color: '#1700c4',
+                    color: '#000',
                     backgroundColor: '#fff',
                     borderRadius: '0',
                     textTransform: 'uppercase',
