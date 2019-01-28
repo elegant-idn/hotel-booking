@@ -22,20 +22,17 @@ class NavbarDark extends Component {
           style={{
             maxWidth: '1400px'
           }}>
-          <button className="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarBasic" aria-controls="navbarBasic" aria-expanded="false" aria-label="Toggle navigation">
-            <span className="icon-bar top-bar bg-white"></span>
-            <span className="icon-bar bottom-bar bg-white"></span>       
-          </button>
-          <a href="/" className="navbar-brand"
-            style={{
-              zIndex: '4000'
-            }}>
+          <a href="/" className="navbar-brand">
             <img 
               src={logo} 
               className="navbar-brand-img"
               alt="Papriika"
             />
           </a>
+          <button className="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarBasic" aria-controls="navbarBasic" aria-expanded="false" aria-label="Toggle navigation">
+            <span className="icon-bar top-bar bg-white"></span>
+            <span className="icon-bar bottom-bar bg-white"></span>       
+          </button>
           <div className="collapse navbar-collapse" id="navbarBasic">
             <span className="navbar-text">
               The world’s best hotels, hand curated
@@ -43,6 +40,9 @@ class NavbarDark extends Component {
             <ul className="navbar-nav ml-auto">
               <li className="nav-item d-md-none">
                 <a className="nav-link" href="/">Home</a>
+              </li>
+              <li className="nav-item">
+                <a className="nav-link" href="/">About</a>
               </li>
               <li className="nav-item">
                 <a className="nav-link" href="/">Contact</a>

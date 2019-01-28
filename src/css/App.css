@@ -14,10 +14,10 @@
 .navbar-brand {
   margin-right: auto;
   margin-left: auto;
+  z-index: 3000;
 }
 
-.navbar-brand-img,
-.brand-img-light {
+.navbar-brand-img {
   width: 100px;
 }
 
@@ -70,7 +70,7 @@ li.nav-item:last-child {
 button.navbar-toggler { 
   position: fixed; /* Prevents button from moving */
   top: 3px;
-  left: 4px;
+  right: 5px;
   outline: none; /* Removes blue outline */
   border: none; /* Removes border outline */
   padding: 9px;
@@ -87,8 +87,8 @@ button.navbar-toggler {
 /* Icon Toggler */
 
 .icon-bar {
-  width: 19px; 
-  height: 1px;
+  width: 20px; 
+  height: 2px;
   display: block;
   transition: all 0.2s ease-in-out;
   margin-top: 6px
@@ -101,7 +101,7 @@ button.navbar-toggler {
 
 .navbar-toggler .top-bar {
   transform: rotate(45deg);
-  transform-origin: 25% 25%;
+  transform-origin: 23% 40%;
 }
  
 .navbar-toggler .middle-bar {
@@ -110,7 +110,7 @@ button.navbar-toggler {
  
 .navbar-toggler .bottom-bar {
   transform: rotate(-45deg);
-  transform-origin: 25% 25%;
+  transform-origin: 21% 40%;
 }
  
 .navbar-toggler.collapsed .top-bar {
