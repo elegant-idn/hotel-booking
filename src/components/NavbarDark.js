@@ -9,7 +9,7 @@ $(document).ready( function() {
   $("button").click( function() {
     $("#navbarBasic").animate( {
       opacity: "toggle",
-      backgroundColor: "#212121"
+      backgroundColor: "#131417"
     }, 300);
   });
 });
@@ -17,7 +17,10 @@ $(document).ready( function() {
 class NavbarDark extends Component {
   render() {
     return (
-      <nav className="navbar fixed-top navbar-expand-md navbar-dark bg-black">
+      <nav className="navbar fixed-top navbar-expand-md navbar-dark"
+        style={{
+          backgroundColor: '#131417'
+        }}>
         <div className="container-fluid fixed-top navbar-fixed-container"
           style={{
             maxWidth: '1400px'
@@ -34,7 +37,7 @@ class NavbarDark extends Component {
             <span className="icon-bar bottom-bar bg-white"></span>       
           </button>
           <div className="collapse navbar-collapse" id="navbarBasic">
-            <span className="navbar-text">
+            <span className="navbar-text navbar-text-tagline">
               The world’s best hotels, hand curated
             </span>
             <ul className="navbar-nav ml-auto">

@@ -16,7 +16,7 @@ class NavbarBooking extends Component {
     return (
       <div className="container-fluid bg-white d-none d-md-block">
         <div className="row">
-          <div className="container navbar-search bg-white">
+          <div className="container navbar-booking bg-white">
             <h3>Access to over 2,300 of the world’s best hotels.</h3>
             <form>
               <div className="form-row">
@@ -86,7 +86,7 @@ class NavbarBooking extends Component {
                   style={{
                     paddingRight: '0'
                   }}>
-                  <button type="submit" className="btn btn-primary btn-navbar-search">
+                  <button type="submit" className="btn btn-primary btn-navbar-booking">
                     Search
                   </button>
                 </div>

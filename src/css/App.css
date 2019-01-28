@@ -30,8 +30,9 @@
 .navbar-nav {
   padding-right: 40px;
   padding-left: 40px;
-  margin: 10px 0;
-  height: 100vh;
+  margin-top: 15px;
+  margin-bottom: 35px;
+  /*height: 100vh;*/
 }
 
 div#navbarBasic {
@@ -44,27 +45,30 @@ div#navbarBasic {
   transition: height .4s ease;
 }
 
-.nav-item {
-  border-bottom: 1px solid rgba(255,255,255,.15);
-}
-
 li.nav-item:last-child {
   border: none;
 }
 
 .nav-link {
+  font-size: 13px;
   font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
   color: #fff;
-  padding: 12px 25px;
+  padding: 10px 25px;
 }
 
 .navbar-text {
   font-size: 15px;
   width: 100%;
   text-align: center;
-  margin-top: 60px;
+  margin-top: 45px;
   padding-top: 3px;
   padding-bottom: 8px;
+}
+
+.navbar-text-tagline {
+  color: #ADB3BE!important;
 }
 
 button.navbar-toggler { 
@@ -164,7 +168,6 @@ button.navbar-toggler {
   .nav-link {
     font-size: 12px;
     font-weight: 700;
-    text-transform: uppercase;
     padding: 8.5px 1rem;
   }
 
@@ -182,6 +185,10 @@ button.navbar-toggler {
     border: none; /* Resets border-bottom on navbar dropdown */
   }
 
+  .navbar-text-tagline {
+    color: #fff!important;
+  }
+
   .navbar-nav {
     margin-top: -1px;
     margin-bottom: 0; /* Resets margin on navbar dropdown */
@@ -193,7 +200,7 @@ button.navbar-toggler {
   /*
   /* Booking Header */
 
-  .navbar-search {
+  .navbar-booking {
     padding-top: 32px;
     padding-bottom: 48px;
   }
@@ -250,7 +257,7 @@ button.navbar-toggler {
     box-shadow: none;
   }
 
-  .btn-navbar-search {
+  .btn-navbar-booking {
     font-size: 13px;
     font-weight: 700;
     text-transform: uppercase;

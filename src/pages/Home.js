@@ -10,7 +10,7 @@ class Home extends Component {
           }}>
         <NavbarDark />
         <NavbarBooking />
-        <div className="jumbotron d-flex align-items-center rounded-0 bg-dark">
+        <div className="jumbotron d-flex align-items-center rounded-0 bg-primary">
           <div className="container col-xl-8 offset-xl-2 text-center text-white ">
             <h1 className="display-4"
               style={{
