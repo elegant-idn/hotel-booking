@@ -1,16 +1,136 @@
 /* App.css */
 
-.navbar {
-  box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.5);
+/* Navbar */
+
+.navbar.fixed-top {
+  height: 46px;
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#181846+0,1700c4+100 */
+  background: #181846;
+  background: -moz-linear-gradient(45deg, #181846 0%, #1700c4 100%);
+  background: -webkit-linear-gradient(45deg, #181846 0%,#1700c4 100%);
+  background: linear-gradient(45deg, #181846 0%,#1700c4 100%);
 }
+
 .navbar-brand {
   margin-right: auto;
   margin-left: auto;
-  font-size: 1rem;
 }
 
-.navbar-brand-img {
-  width: 125px;
+.navbar-brand-img,
+.brand-img-light {
+  width: 100px;
+}
+
+/* Custom class required for navbars with fixed-* & container classes */
+.navbar-fixed-container {
+  top: 0;
+  min-width: 100%;
+}
+
+.navbar-nav {
+  padding-right: 40px;
+  padding-left: 40px;
+  margin: 10px 0;
+  height: 100vh;
+}
+
+div#navbarBasic {
+  top: 0;
+  position: fixed;
+  width: 100%;
+}
+
+.collapsing {
+  transition: height .4s ease;
+}
+
+.nav-item {
+  border-bottom: 1px solid rgba(255,255,255,.15);
+}
+
+li.nav-item:last-child {
+  border: none;
+}
+
+.nav-link {
+  font-weight: 500;
+  color: #fff;
+  padding: 12px 25px;
+}
+
+.navbar-text {
+  font-size: 15px;
+  width: 100%;
+  text-align: center;
+  margin-top: 60px;
+  padding-top: 3px;
+  padding-bottom: 8px;
+}
+
+button.navbar-toggler { 
+  position: fixed; /* Prevents button from moving */
+  top: 3px;
+  left: 4px;
+  outline: none; /* Removes blue outline */
+  border: none; /* Removes border outline */
+  padding: 9px;
+  padding-right:14px;
+  padding-bottom: 14px;
+  padding-left:14px;
+  z-index: 2000;
+}
+
+/*.navbar-collapse.collapse.show {
+  background-color: black;
+}*/
+
+/* Icon Toggler */
+
+.icon-bar {
+  width: 19px; 
+  height: 1px;
+  display: block;
+  transition: all 0.2s ease-in-out;
+  margin-top: 6px
+}
+ 
+.navbar-toggler {
+  border: none;
+  background: transparent;
+}
+
+.navbar-toggler .top-bar {
+  transform: rotate(45deg);
+  transform-origin: 25% 25%;
+}
+ 
+.navbar-toggler .middle-bar {
+  opacity: 0;
+}
+ 
+.navbar-toggler .bottom-bar {
+  transform: rotate(-45deg);
+  transform-origin: 25% 25%;
+}
+ 
+.navbar-toggler.collapsed .top-bar {
+  transform: rotate(0);
+}
+ 
+.navbar-toggler.collapsed .middle-bar {
+  opacity: 1;
+}
+ 
+.navbar-toggler.collapsed .bottom-bar {
+  transform: rotate(0);
+}
+
+.jumbotron {
+  height: 360px;
+  background: #181846;
+  background: -moz-linear-gradient(45deg, #181846 0%, #1700c4 100%);
+  background: -webkit-linear-gradient(45deg, #181846 0%,#1700c4 100%);
+  background: linear-gradient(45deg, #181846 0%,#1700c4 100%);
 }
 
 /* Extra small devices (portrait phones, less than 576px) */
@@ -21,15 +141,139 @@
 
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
-  .navbar {
-    margin-top: 15px;
+
+  .jumbotron {
+    height: 540px;
+  }
+
+  h3 {
+    font-weight: 800;
+  }
+  
+  /* Navbar */
+  
+  .navbar.fixed-top {
+    height: 46px;
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#181846+0,1700c4+100 */
+    background: #181846;
+    background: -moz-linear-gradient(45deg, #181846 0%, #1700c4 100%);
+    background: -webkit-linear-gradient(45deg, #181846 0%,#1700c4 100%);
+    background: linear-gradient(45deg, #181846 0%,#1700c4 100%);
+  }
+
+  .navbar-brand {
+    margin-top: -6px;
+    margin-left: 0;
+  }
+
+  .navbar-brand-img {
+    width: 115px;
+  }
+
+  .nav-link {
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 8.5px 1rem;
+  }
+
+  div#navbarBasic,
+  .navbar-fixed-container {
+    position: unset;
+  }
+
+  .navbar-text {
+    width: auto;
+    text-align: left;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    margin: 5px 24px;
+    border: none; /* Resets border-bottom on navbar dropdown */
+  }
+
+  .navbar-nav {
+    margin-top: -1px;
+    margin-bottom: 0; /* Resets margin on navbar dropdown */
+    padding: 0; /* Resets padding on navbar dropdown */
+    height: auto; /* Resets vh on small device dropdown */
+  }
+
+  /* Components
+  /*
+  /* Booking Header */
+
+  .navbar-search {
+    padding-top: 32px;
+    padding-bottom: 48px;
+  }
+
+  label.navbar-label-destination,
+  label.navbar-label-dates {
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 14px;
+    color: #000;
+    margin-top: 18px;
+    letter-spacing: .03em;
+  }
+
+  input, .form-control {
+    border-radius: 4px;
+  }
+
+  .form-control-navbar-booking,
+  .form-control[readonly] {
+    color: #000;
+    letter-spacing: -0.03em;
+    padding: 30px 20px;
+    background-color: #F1F4F7; /* Light Steel */
+    border: 3px solid #F1F4F7; /* Light Steel */
+
+  }
+  .form-control-navbar-booking:hover {
+    background-color: #fff;
+    border: 3px solid #F1F4F7;
+    box-shadow: none;
+    transition: all 0.25s ease-in-out;
+  }
+  .form-control-navbar-booking:focus {
+    color: #000;
+    background-color: #fff;
+    border: 3px solid #1300a3;
+    box-shadow: none;
+  }
+
+  .form-control-navbar-booking::-webkit-input-placeholder {
+    color: #000;;
+    transition: opacity 0.25s ease-in-out;
+  }
+  :hover::-webkit-input-placeholder {
+    color: #000;
+    transition: opacity 0.25s ease-in-out;
+  }
+  :focus::-webkit-input-placeholder {
+    color: #000;
+    opacity: 0.25;
+    transition: opacity 0.25s ease-in-out;
+    box-shadow: none;
+  }
+
+  .btn-navbar-search {
+    font-size: 13px;
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 14px;
+    letter-spacing: .03em;
+    padding: 25px 40px;
+    margin-top: 41px;
   }
 }
 
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
-  .navbar-brand {
-    margin-left: 0;
+  .navbar-fixed-container {
+    min-width: unset;
   }
 }
 
