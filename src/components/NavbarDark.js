@@ -18,11 +18,11 @@ $(document).ready( function() {
 class NavbarDark extends Component {
   render() {
     return (
-      <nav className="navbar fixed-top navbar-expand-md navbar-dark"
+      <nav className="navbar navbar-expand-md navbar-dark"
         style={{
           backgroundColor: '#131417'
         }}>
-        <div className="container fixed-top navbar-fixed-container">
+        <div className="container">
           <a href="/" className="navbar-brand d-none d-md-block">
             <img 
               src={logo} 

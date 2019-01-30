@@ -23,7 +23,6 @@
 
 /* Custom class required for navbars with fixed-* & container classes */
 .navbar-fixed-container {
-  top: 0;
   min-width: 100%;
 }
 
@@ -32,11 +31,12 @@
   padding-left: 40px;
   margin-top: 15px;
   margin-bottom: 35px;
-  /*height: 100vh;*/
+  height: 100vh;
 }
 
 div#navbarBasic {
   top: 0;
+  left: 0;
   position: absolute;
   width: 100%;
 }
@@ -72,9 +72,6 @@ li.nav-item:last-child {
 }
 
 button.navbar-toggler { 
-  position: fixed; /* Prevents button from moving */
-  top: 3px;
-  right: 5px;
   outline: none; /* Removes blue outline */
   border: none; /* Removes border outline */
   padding: 9px;
@@ -131,6 +128,24 @@ button.navbar-toggler {
 
 .hero-container {
   height: 480px;
+}
+
+/* 
+   Alerts
+   Refactor to include new color variables as well as sizes
+*/
+
+.alert-small { 
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: .13em;
+  text-transform: uppercase;
+  height: 35px;
+  padding: 6px 15px;
+}
+
+.alert-black {
+  color: #fff;
 }
 
 /* Extra small devices (portrait phones, less than 576px) */

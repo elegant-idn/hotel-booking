@@ -31,6 +31,15 @@ $navbar-light-color:                 rgba(#000, 1);
 $navbar-light-hover-color:           rgba(#000, .5);
 $navbar-light-active-color:          primary;
 
+// Alerts
+// Refactor to include new color variables as well as sizes
+
+$alert-border-radius:               0;
+$alert-bg-level:                    0;
+$alert-border-level:                0;
+$alert-color-level:                 0;
+
+
 // Override default variables before the import
 // Import Bootstrap and its default variables
 

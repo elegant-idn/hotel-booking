@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
+import AlertSmall from '../components/AlertSmall';
 import NavbarDark from '../components/NavbarDark';
 import HeaderBooking from '../components/HeaderBooking';
 import Background from './../img/hotels/hotel-142-shanghai-puli-hotel-spa-01.jpg';
@@ -17,6 +18,7 @@ class Home extends Component {
   render() {
     return (
       <div>
+        <AlertSmall />
         <NavbarDark />
         <HeaderBooking />
         <div className="container">
