@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import $ from 'jquery';
 import 'jquery-ui-dist/jquery-ui.min.js';
 import logo from './../img/papriika-logo-wordmark-1-white.svg';
+import logoBug from './../img/papriika-bug-white.svg';
 
 // Value equal to `.collapsing` class is set to none.
 
@@ -21,13 +22,17 @@ class NavbarDark extends Component {
         style={{
           backgroundColor: '#131417'
         }}>
-        <div className="container fixed-top navbar-fixed-container"
-          style={{
-            // maxWidth: '1400px'
-          }}>
-          <a href="/" className="navbar-brand">
+        <div className="container fixed-top navbar-fixed-container">
+          <a href="/" className="navbar-brand d-none d-md-block">
             <img 
               src={logo} 
+              className="navbar-brand-img"
+              alt="Papriika"
+            />
+          </a>
+          <a href="/" className="navbar-brand mx-auto d-md-none">
+            <img 
+              src={logoBug} 
               className="navbar-brand-img"
               alt="Papriika"
             />

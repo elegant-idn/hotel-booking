@@ -3,7 +3,7 @@ import Flatpickr from 'react-flatpickr';
 import 'flatpickr/dist/themes/airbnb.css';
 import '../css/flatpickr.css';
 
-class NavbarBooking extends Component {
+class HeaderBooking extends Component {
   constructor() {
     super();
  
@@ -14,10 +14,10 @@ class NavbarBooking extends Component {
   render() {
     const { date } = this.state;
     return (
-      <div className="container-fluid bg-white d-none d-md-block">
+      <div className="container bg-white d-none d-md-block">
         <div className="row">
           <div className="container navbar-booking bg-white">
-            <h3>Access over 2,300 of the world’s best hotels.</h3>
+            <h3>Access over 2,300 of the world’s best hotels, hand curated.</h3>
             <form>
               <div className="form-row">
                 <div className="col"
@@ -99,4 +99,4 @@ class NavbarBooking extends Component {
   }
 }
 
-export default NavbarBooking;
+export default HeaderBooking;

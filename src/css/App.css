@@ -12,13 +12,13 @@
 }
 
 .navbar-brand {
-  margin-right: auto;
-  margin-left: auto;
-  z-index: 3000;
+  padding-top: 5px;
+  padding-bottom: 0;
+  z-index: 1001;
 }
 
 .navbar-brand-img {
-  width: 100px;
+  width: 36px;
 }
 
 /* Custom class required for navbars with fixed-* & container classes */
@@ -143,7 +143,8 @@ button.navbar-toggler {
 @media (min-width: 768px) {
 
   .hero-container {
-    height: 540px;
+    height: 450px;
+    background-clip: content-box; /* Hack to remove padding on bkg images */
   }
 
   h3 {
