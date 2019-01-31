@@ -1,13 +1,12 @@
-import React, { Component } from 'react';
+import React from 'react';
 
-class AlertSmall extends Component {
-  render() {
-    return (
-      <div className="alert alert-black alert-small text-center" role="alert">
-        Coming soon!  Exclusive member rewards.
-      </div>
-    );
-  }
-}
+// Using a functional component as it does not contain it's own state.
+const AlertSmall = (props) => {
+  return (
+    <div className="alert alert-black alert-small" role="alert">
+      {props.alert}
+    </div>
+  );
+};
 
 export default AlertSmall;

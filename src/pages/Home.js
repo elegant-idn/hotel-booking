@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
 import AlertSmall from '../components/AlertSmall';
-import NavbarDark from '../components/NavbarDark';
+import NavbarLight from '../components/NavbarLight';
 import HeaderBooking from '../components/HeaderBooking';
 import Background from './../img/hotels/hotel-142-shanghai-puli-hotel-spa-01.jpg';
 
@@ -14,12 +14,13 @@ const Div = styled.div`
     background-position: center;
 `;
 
+// Using a ES6 class component as it contains state.
 class Home extends Component {
   render() {
     return (
       <div>
-        <AlertSmall />
-        <NavbarDark />
+        <AlertSmall alert="Coming soon! Exclusive member rewards." className={.join('bg-danger')} />
+        <NavbarLight />
         <HeaderBooking />
         <div className="container">
           <div className="row">

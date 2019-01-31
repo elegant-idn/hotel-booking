@@ -5,6 +5,7 @@
   "dependencies": {
     "@universelabs/meta": "^1.4.4",
     "bootstrap": "^4.2.1",
+    "classnames": "^2.2.6",
     "jquery": "^3.3.1",
     "jquery-ui-dist": "^1.12.1",
     "node-sass": "^4.11.0",

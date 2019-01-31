@@ -2,13 +2,8 @@
 
 /* Navbar */
 
-.navbar.fixed-top {
-  height: 46px;
-  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#181846+0,1700c4+100 */
-  /*background: #181846;
-  background: -moz-linear-gradient(45deg, #181846 0%, #1700c4 100%);
-  background: -webkit-linear-gradient(45deg, #181846 0%,#1700c4 100%);
-  background: linear-gradient(45deg, #181846 0%,#1700c4 100%);*/
+.navbar {
+  height: 53px;
 }
 
 .navbar-brand {
@@ -140,8 +135,8 @@ button.navbar-toggler {
   font-weight: 600;
   letter-spacing: .13em;
   text-transform: uppercase;
-  height: 35px;
-  padding: 6px 15px;
+  height: 36px;
+  padding: 7px 15px;
 }
 
 .alert-black {
