@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import styled from 'styled-components';
 import Alert from '../components/Alert';
 import NavbarLight from '../components/NavbarLight';
-import HeaderBooking from '../components/HeaderBooking';
 import Background from './../img/hotels/hotel-142-shanghai-puli-hotel-spa-01.jpg';
 
 const Div = styled.div`
@@ -27,7 +26,6 @@ class Home extends Component {
           Coming soon! Exclusive member rewards.
         </Alert>
         <NavbarLight />
-        <HeaderBooking />
         <div className="container">
           <div className="row">
             <div className="container hero-container bg-primary">

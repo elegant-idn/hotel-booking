@@ -1,15 +1,10 @@
 import React, { Component } from 'react';
 
-class Alert extends React.Component {
+class Alert extends Component {
   render() {
     return (
       <div 
-        className={`
-          alert 
-          ${this.props.sizeClassName} 
-          ${this.props.colorClassName} 
-          ${this.props.className}
-        `}
+        className={`alert ${this.props.sizeClassName} ${this.props.colorClassName} ${this.props.className}`}
         style={this.props.style}
         >
         {this.props.children}

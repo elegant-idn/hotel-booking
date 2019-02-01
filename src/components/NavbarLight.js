@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import $ from 'jquery';
 import 'jquery-ui-dist/jquery-ui.min.js';
-import logo from './../img/papriika-logo-wordmark-1.svg';
+import Logo from '../components/Logo';
 
 // Value equal to `.collapsing` class is set to none.
 
@@ -23,10 +23,9 @@ class NavbarLight extends Component {
         }}>
         <div className="container">
           <a href="/" className="navbar-brand d-none d-md-block">
-            <img 
-              src={logo} 
+            <Logo
               className="navbar-brand-img"
-              alt="Papriika"
+              logoAlt="Papriika"
             />
           </a>
           <button className="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarBasic" aria-controls="navbarBasic" aria-expanded="false" aria-label="Toggle navigation">
