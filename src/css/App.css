@@ -6,14 +6,9 @@
   height: 53px;
 }
 
-.navbar-brand {
-  padding-top: 5px;
-  padding-bottom: 0;
-  z-index: 1001;
-}
-
 .navbar-brand-img {
-  width: 100px;
+  margin-top: -1px;
+  width: 90px;
 }
 
 /* Custom class required for navbars with fixed-* & container classes */
