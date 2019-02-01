@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
-import AlertSmall from '../components/AlertSmall';
+import Alert from '../components/Alert';
 import NavbarLight from '../components/NavbarLight';
 import HeaderBooking from '../components/HeaderBooking';
 import Background from './../img/hotels/hotel-142-shanghai-puli-hotel-spa-01.jpg';
@@ -19,7 +19,13 @@ class Home extends Component {
   render() {
     return (
       <div>
-        <AlertSmall alert="Coming soon! Exclusive member rewards." className={.join('bg-danger')} />
+        <Alert 
+          className="text-center"
+          sizeClassName="alert-small"
+          colorClassName="alert-black"
+          >
+          Coming soon! Exclusive member rewards.
+        </Alert>
         <NavbarLight />
         <HeaderBooking />
         <div className="container">
