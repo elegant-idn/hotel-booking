@@ -19,10 +19,10 @@ class Home extends Component {
   render() {
     return (
       <div>
-        <Alert 
-          className="text-center"
+        <Alert
           sizeClassName="alert-small"
           colorClassName="alert-black"
+          className="text-center"
           >
           Coming soon! Exclusive member rewards.
         </Alert>
