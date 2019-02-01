@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import $ from 'jquery';
 import 'jquery-ui-dist/jquery-ui.min.js';
 import Logo from '../components/Logo';
+import NavbarToggler from '../components/NavbarToggler';
 
 // Value equal to `.collapsing` class is set to none.
 
@@ -14,24 +15,23 @@ $(document).ready( function() {
   });
 });
 
-class NavbarLight extends Component {
+class Navbar extends Component {
   render() {
     return (
-      <nav className="navbar navbar-expand-md navbar-light"
-        style={{
-          backgroundColor: '#fff'
-        }}>
+      <nav 
+        className={`navbar navbar-expand-md ${this.props.colorScheme}`}
+        style={this.props.style}
+        >
         <div className="container">
-          <a href="/" className="navbar-brand d-none d-md-block">
+          <a href="/" className="navbar-brand">
             <Logo
               className="navbar-brand-img"
               logoAlt="Papriika"
             />
           </a>
-          <button className="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarBasic" aria-controls="navbarBasic" aria-expanded="false" aria-label="Toggle navigation">
-            <span className="icon-bar top-bar bg-white"></span>
-            <span className="icon-bar bottom-bar bg-white"></span>       
-          </button>
+          <NavbarToggler
+            className="navbar-toggler-dark"
+          />
           <div className="collapse navbar-collapse" id="navbarBasic">
             <span className="navbar-text navbar-text-tagline">
               The world’s best hotels, hand curated.
@@ -40,14 +40,9 @@ class NavbarLight extends Component {
               <li className="nav-item d-md-none">
                 <a className="nav-link" href="/">Home</a>
               </li>
-              {/*
               <li className="nav-item">
-                <a className="nav-link" href="/">About</a>
+                <a className="nav-link" href="mailto:guy@papriika.com?subject=Mail from Papriika.com">Contact</a>
               </li>
-              <li className="nav-item">
-                <a className="nav-link" href="/">Contact</a>
-              </li>
-            */}
             </ul>
           </div>
         </div>
@@ -56,4 +51,4 @@ class NavbarLight extends Component {
   }
 }
 
-export default NavbarLight;
+export default Navbar;

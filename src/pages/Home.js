@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
 import Alert from '../components/Alert';
-import NavbarLight from '../components/NavbarLight';
+import Navbar from '../components/Navbar';
 import Background from './../img/hotels/hotel-142-shanghai-puli-hotel-spa-01.jpg';
 
 const Div = styled.div`
@@ -19,16 +19,22 @@ class Home extends Component {
     return (
       <div>
         <Alert
-          sizeClassName="alert-small"
-          colorClassName="alert-black"
+          size="alert-small"
+          color="alert-black"
           className="text-center"
+          style={{marginBottom: 0}}
           >
           Coming soon! Exclusive member rewards.
         </Alert>
-        <NavbarLight />
+        <Navbar
+          colorScheme="navbar-light"
+          style={{
+            backgroundColor: '#fff'
+          }}
+        />
         <div className="container">
           <div className="row">
-            <div className="container hero-container bg-primary">
+            <Div className="container hero-container bg-primary">
               <div className="container hero-container">
                 <div className="container text-center text-white p-4"
                   style={{
@@ -44,43 +50,6 @@ class Home extends Component {
                       Access over 2,300 of the world’s best hotels.
                     </h3>
                   </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div className="jumbotron bg-white">
-        </div>
-        <div className="container">
-          <div className="row">
-            <Div className="container hero-container">
-              <div className="container text-center text-white p-4"
-                style={{
-                  display: 'table',
-                  height: '100%'
-                }}>
-                <div
-                  style={{
-                    display: 'table-cell',
-                    verticalAlign: 'bottom'
-                  }}>
-                  <p>
-                    <span className="badge"
-                      style={{
-                        color: '#000',
-                        backgroundColor: '#fff',
-                        borderRadius: '0',
-                        textTransform: 'uppercase',
-                        fontSize: '12px',
-                        fontWeight: '700',
-                        padding: '10px 25px'
-                      }}>
-                      New!
-                    </span>
-                  </p>
-                  <h5>
-                    Waldorf Astoria, Shanghai, China
-                  </h5>
                 </div>
               </div>
             </Div>

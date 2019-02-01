@@ -13,7 +13,7 @@
 }
 
 .navbar-brand-img {
-  width: 36px;
+  width: 100px;
 }
 
 /* Custom class required for navbars with fixed-* & container classes */
@@ -63,7 +63,7 @@ li.nav-item:last-child {
 }
 
 .navbar-text-tagline {
-  color: #ADB3BE!important;
+  color: #000;
 }
 
 button.navbar-toggler { 
@@ -88,6 +88,14 @@ button.navbar-toggler {
   display: block;
   transition: all 0.2s ease-in-out;
   margin-top: 6px
+}
+
+.navbar-toggler-dark {
+  background-color: #000;
+}
+
+.navbar-toggler-light {
+  background-color: #fff;
 }
  
 .navbar-toggler {
@@ -193,10 +201,6 @@ button.navbar-toggler {
     padding-bottom: 0.5rem;
     margin: 5px 24px;
     border: none; /* Resets border-bottom on navbar dropdown */
-  }
-
-  .navbar-text-tagline {
-    color: #fff!important;
   }
 
   .navbar-nav {
