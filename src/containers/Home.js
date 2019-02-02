@@ -36,7 +36,7 @@ class Home extends Component {
         />
 
         <div className="container">
-          <Div className="container hero-container bg-primary">
+          <Div className="hero-container">
             <div className="container hero-container">
               <div className="container text-center text-white p-4"
                 style={{
