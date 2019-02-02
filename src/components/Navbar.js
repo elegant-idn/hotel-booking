@@ -36,7 +36,7 @@ class Navbar extends Component {
               </a>
             </Div>
             <span className="navbar-text navbar-text-tagline">
-              The world’s best hotels, hand curated.
+              Hotel Club
             </span>
             <ul className="navbar-nav ml-auto">
               <li className="nav-item d-md-none">
