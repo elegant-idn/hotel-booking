@@ -59,6 +59,16 @@ class Home extends Component {
           >
           Early members receive 50% off membership!
         </Alert>
+        <Alert
+          color="alert-black"
+          className="text-center"
+          style={{
+            marginBottom: 0,
+            textTransform: 'capitalize'
+          }}
+          >
+          We use the blockchain as a source of truth, guaranteeing travellers and hoteliers the best rates.
+        </Alert>
       </div>
     );
   }
