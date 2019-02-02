@@ -1,3 +1,7 @@
+/* #1700c4   BLUE    -------- */
+ ::selection{background:rgba(23,0,196,0.99);color:#fff;}
+ ::-moz-selection{background:rgba(23,0,196,0.99);color:#fff;}
+
 * {
   -webkit-tap-highlight-color: transparent;
 }
