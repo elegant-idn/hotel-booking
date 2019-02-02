@@ -32,6 +32,7 @@ class Home extends Component {
             backgroundColor: '#fff'
           }}
         />
+
         <div className="container">
           <div className="row">
             <Div className="container hero-container bg-primary">
