@@ -2,12 +2,7 @@
 
 /* Navbar */
 
-.navbar {
-  height: 53px;
-}
-
 .navbar-brand-img {
-  margin-top: -1px;
   width: 90px;
 }
 
@@ -40,8 +35,8 @@ li.nav-item:last-child {
 }
 
 .nav-link {
-  font-size: 13px;
-  font-weight: 500;
+  font-size: 12px;
+  font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.1em;
   color: #fff;
@@ -52,7 +47,6 @@ li.nav-item:last-child {
   font-size: 15px;
   width: 100%;
   text-align: center;
-  margin-top: 45px;
   padding-top: 3px;
   padding-bottom: 8px;
 }
@@ -164,23 +158,17 @@ button.navbar-toggler {
   }
   
   /* Navbar */
-  
-  .navbar.fixed-top {
-    height: 46px;
-  }
 
   .navbar-brand {
-    margin-top: -6px;
     margin-left: -3px;
   }
 
   .navbar-brand-img {
+    padding: 0;
     width: 115px;
   }
 
   .nav-link {
-    font-size: 12px;
-    font-weight: 700;
     padding: 8.5px 1rem;
   }
 

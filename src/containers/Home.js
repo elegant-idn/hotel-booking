@@ -22,7 +22,9 @@ class Home extends Component {
           size="alert-small"
           color="alert-black"
           className="text-center"
-          style={{marginBottom: 0}}
+          style={{
+            marginBottom: 0
+          }}
           >
           Coming soon! Exclusive member rewards.
         </Alert>
