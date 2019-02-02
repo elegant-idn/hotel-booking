@@ -17,15 +17,12 @@
 
   .hero-container {
     height: 450px;
-    background-clip: content-box; /* Hack to remove padding on bkg images */
+    /*background-clip: content-box;*/ /* Hack to remove padding on bkg images */
   }
 
   h3 {
     font-weight: 800;
   }
-
-  /* Components */
-
 
 }
 

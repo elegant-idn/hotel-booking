@@ -7,10 +7,11 @@ import NavbarToggler from '../components/NavbarToggler';
 const Nav = styled.nav`
   padding-top: 0.15rem;
   padding-bottom: 0.15rem;
+  background-color: #fff;
 
   @media (min-width: 768px) {
     padding-top: 0;
-  padding-bottom: 0;
+    padding-bottom: 0;
   }
 `;
 
