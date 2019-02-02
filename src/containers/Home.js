@@ -36,27 +36,25 @@ class Home extends Component {
         />
 
         <div className="container">
-          <div className="row">
-            <Div className="container hero-container bg-primary">
-              <div className="container hero-container">
-                <div className="container text-center text-white p-4"
+          <Div className="container hero-container bg-primary">
+            <div className="container hero-container">
+              <div className="container text-center text-white p-4"
+                style={{
+                  display: 'table',
+                  height: '100%'
+                }}>
+                <div
                   style={{
-                    display: 'table',
-                    height: '100%'
+                    display: 'table-cell',
+                    verticalAlign: 'middle'
                   }}>
-                  <div
-                    style={{
-                      display: 'table-cell',
-                      verticalAlign: 'middle'
-                    }}>
-                    <h3>
-                      Access over 2,300 of the world’s best hotels.
-                    </h3>
-                  </div>
+                  <h3>
+                    Access over 2,300 of the world’s best hotels.
+                  </h3>
                 </div>
               </div>
-            </Div>
-          </div>
+            </div>
+          </Div>
         </div>
         <div className="jumbotron bg-white">
         </div>

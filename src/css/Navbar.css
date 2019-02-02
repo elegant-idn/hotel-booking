@@ -148,7 +148,8 @@ button.navbar-toggler {
     text-align: left;
     padding-top: 0.5rem;
     padding-bottom: 0.5rem;
-    margin: 5px 24px;
+    margin-top: 5px;
+    margin-bottom: 5px;
     border: none; /* Resets border-bottom on navbar dropdown */
   }
 
