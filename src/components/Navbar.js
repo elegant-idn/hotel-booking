@@ -1,10 +1,7 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
-import $ from 'jquery';
-import 'jquery-ui-dist/jquery-ui.min.js';
 import Logo from '../components/Logo';
 import NavbarToggler from '../components/NavbarToggler';
-
 
 const Nav = styled.nav`
   padding-top: 0.15rem;
@@ -20,43 +17,21 @@ const Div = styled.div`
   height: 43.5px;
 `;
 
-
-// Value equal to `.collapsing` class is set to none.
-
-$(document).ready( function() {
-  $("button").click( function() {
-    $("#navbarBasic").animate( {
-      opacity: "toggle",
-      backgroundColor: "#fff"
-    }, 300);
-  });
-});
-
 class Navbar extends Component {
   render() {
     return (
       <Nav 
         className={`navbar navbar-expand-md ${this.props.colorScheme}`}
-        style={this.props.style}
-        >
+        style={this.props.style}>
         <div className="container">
           <a className="navbar-brand d-flex align-items-center" href="/">
-            <Logo
-              className="navbar-brand-img"
-              logoAlt="Papriika Logo"
-              />
+            <Logo className="navbar-brand-img" logoAlt="Papriika Logo"/>
           </a>
-          <NavbarToggler
-            className="d-flex align-items-right navbar-toggler-dark"
-            />
+          <NavbarToggler className="d-flex align-items-right navbar-toggler-dark"/>
           <div className="collapse navbar-collapse" id="navbarBasic">
             <Div className="container d-flex align-items-center justify-content-center d-md-none">
-              <a className="navbar-brand d-flex align-items-center justify-content-center" href="/"
-                >
-                <Logo
-                  className="navbar-brand-img"
-                  logoAlt="Papriika Logo"
-                  />
+              <a className="navbar-brand d-flex align-items-center justify-content-center" href="/">
+                <Logo className="navbar-brand-img" logoAlt="Papriika Logo"/>
               </a>
             </Div>
             <span className="navbar-text navbar-text-tagline">
