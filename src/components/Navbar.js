@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import '../css/Navbar.css';
 import styled from 'styled-components';
 import Logo from '../components/Logo';
 import NavbarToggler from '../components/NavbarToggler';

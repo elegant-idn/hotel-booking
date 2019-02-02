@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import Flatpickr from 'react-flatpickr';
 import 'flatpickr/dist/themes/airbnb.css';
-import '../css/flatpickr.css';
+import '../css/Flatpickr.css';
+import '../css/HeaderBooking.css';
 
 class HeaderBooking extends Component {
   constructor() {

@@ -1,9 +1,18 @@
-/* App.css */
+/* 
+   Alerts
+   Refactor to include new color variables as well as sizes
+*/
 
-/* Hero */
+.alert-small { 
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: .13em;
+  text-transform: uppercase;
+  padding: 7px 15px;
+}
 
-.hero-container {
-  height: 480px;
+.alert-black {
+  color: #fff;
 }
 
 /* Extra small devices (portrait phones, less than 576px) */
@@ -13,21 +22,7 @@
 @media (min-width: 576px) {}
 
 /* Medium devices (tablets, 768px and up) */
-@media (min-width: 768px) {
-
-  .hero-container {
-    height: 450px;
-    background-clip: content-box; /* Hack to remove padding on bkg images */
-  }
-
-  h3 {
-    font-weight: 800;
-  }
-
-  /* Components */
-
-
-}
+@media (min-width: 768px) {}
 
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {}

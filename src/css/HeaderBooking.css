@@ -1,0 +1,106 @@
+/* Header Booking */
+
+
+
+/* Extra small devices (portrait phones, less than 576px) */
+/* No media query for `xs` since this is the default in Bootstrap */
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+
+  /* Header Booking */
+
+  .navbar-booking {
+    padding-top: 32px;
+    padding-bottom: 48px;
+  }
+
+  label.navbar-label-destination,
+  label.navbar-label-dates {
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 14px;
+    color: #000;
+    margin-top: 18px;
+    letter-spacing: .03em;
+  }
+
+  input, .form-control {
+    border-radius: 4px;
+  }
+
+  .form-control-navbar-booking,
+  .form-control[readonly] {
+    color: #000;
+    letter-spacing: -0.03em;
+    padding: 30px 20px;
+    background-color: #F1F4F7; /* Light Steel */
+    border: 3px solid #F1F4F7; /* Light Steel */
+
+  }
+  .form-control-navbar-booking:hover {
+    background-color: #fff;
+    border: 3px solid #F1F4F7;
+    box-shadow: none;
+    transition: all 0.25s ease-in-out;
+  }
+  .form-control-navbar-booking:focus {
+    color: #000;
+    background-color: #fff;
+    border: 3px solid #1300a3;
+    box-shadow: none;
+  }
+
+  .form-control-navbar-booking::-webkit-input-placeholder {
+    color: #000;;
+    transition: opacity 0.25s ease-in-out;
+  }
+  :hover::-webkit-input-placeholder {
+    color: #000;
+    transition: opacity 0.25s ease-in-out;
+  }
+  :focus::-webkit-input-placeholder {
+    color: #000;
+    opacity: 0.25;
+    transition: opacity 0.25s ease-in-out;
+    box-shadow: none;
+  }
+
+  .btn-navbar-booking {
+    font-size: 13px;
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 14px;
+    letter-spacing: .03em;
+    padding: 25px 40px;
+    margin-top: 41px;
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {}
+
+/* Extra Extra small devices devices */
+@media (max-width:348px) {}
+
+/* Extra small devices (portrait phones, less than 576px)*/
+@media (max-width: 575.98px) {}
+
+/* Small devices (landscape phones, less than 768px)*/
+@media (max-width: 767.98px) {}
+
+/* Medium devices (tablets, less than 992px)*/
+@media (max-width: 991.98px) {}
+
+/* Large devices (desktops, less than 1200px)*/
+@media (max-width: 1199.98px) {}
+
+/* Extra large devices (large desktops)*/
+/* No media query since the extra-large breakpoint has no upper bound on its width */

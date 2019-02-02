@@ -1,0 +1,190 @@
+/* Navbar */
+
+.navbar-brand-img {
+  width: 90px;
+}
+
+/* Custom class required for navbars with fixed-* & container classes */
+.navbar-fixed-container {
+  min-width: 100%;
+}
+
+.navbar-nav {
+  padding-right: 40px;
+  padding-left: 40px;
+  margin-top: 15px;
+  margin-bottom: 35px;
+  height: 100vh;
+}
+
+div#navbarBasic {
+  top: 0;
+  left: 0;
+  position: absolute;
+  width: 100%;
+}
+
+li.nav-item:last-child {
+  border: none;
+}
+
+.nav-link {
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: #fff;
+  padding: 10px 25px;
+}
+
+.navbar-text {
+  font-size: 15px;
+  width: 100%;
+  text-align: center;
+  padding-top: 3px;
+  padding-bottom: 8px;
+}
+
+.navbar-text-tagline {
+  color: #000;
+}
+
+button.navbar-toggler { 
+  outline: none; /* Removes blue outline */
+  border: none; /* Removes border outline */
+  padding: 9px;
+  padding-right:14px;
+  padding-bottom: 14px;
+  padding-left:14px;
+  z-index: 2000;
+}
+
+/* Collapse */
+
+.collapsing {
+  transition: height .4s ease;
+}
+
+/* Icon Toggler */
+
+.icon-bar {
+  width: 20px; 
+  height: 2px;
+  display: block;
+  transition: all 0.2s ease-in-out;
+  margin-top: 6px
+}
+
+.navbar-toggler-dark {
+  background-color: #000;
+}
+
+.navbar-toggler-light {
+  background-color: #fff;
+}
+ 
+.navbar-toggler {
+  border: none;
+  background: transparent;
+}
+
+.navbar-toggler .top-bar {
+  transform: rotate(45deg);
+  transform-origin: 23% 40%;
+}
+ 
+.navbar-toggler .middle-bar {
+  opacity: 0;
+}
+ 
+.navbar-toggler .bottom-bar {
+  transform: rotate(-45deg);
+  transform-origin: 21% 40%;
+}
+ 
+.navbar-toggler.collapsed .top-bar {
+  transform: rotate(0);
+}
+ 
+.navbar-toggler.collapsed .middle-bar {
+  opacity: 1;
+}
+ 
+.navbar-toggler.collapsed .bottom-bar {
+  transform: rotate(0);
+}
+
+/* Extra small devices (portrait phones, less than 576px) */
+/* No media query for `xs` since this is the default in Bootstrap */
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  
+  /* Navbar */
+
+  .navbar-brand {
+    margin-left: -3px;
+  }
+
+  .navbar-brand-img {
+    padding: 0;
+    width: 115px;
+  }
+
+  .nav-link {
+    padding: 8.5px 1rem;
+  }
+
+  div#navbarBasic,
+  .navbar-fixed-container {
+    position: unset;
+  }
+
+  .navbar-text {
+    width: auto;
+    text-align: left;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    margin: 5px 24px;
+    border: none; /* Resets border-bottom on navbar dropdown */
+  }
+
+  .navbar-nav {
+    margin-top: -1px;
+    margin-bottom: 0; /* Resets margin on navbar dropdown */
+    padding: 0; /* Resets padding on navbar dropdown */
+    height: auto; /* Resets vh on small device dropdown */
+  }
+  
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  .navbar-fixed-container {
+    min-width: unset;
+  }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {}
+
+/* Extra Extra small devices devices */
+@media (max-width:348px) {}
+
+/* Extra small devices (portrait phones, less than 576px)*/
+@media (max-width: 575.98px) {}
+
+/* Small devices (landscape phones, less than 768px)*/
+@media (max-width: 767.98px) {}
+
+/* Medium devices (tablets, less than 992px)*/
+@media (max-width: 991.98px) {}
+
+/* Large devices (desktops, less than 1200px)*/
+@media (max-width: 1199.98px) {}
+
+/* Extra large devices (large desktops)*/
+/* No media query since the extra-large breakpoint has no upper bound on its width */
