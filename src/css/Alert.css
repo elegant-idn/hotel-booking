@@ -3,15 +3,21 @@
    Refactor to include new color variables as well as sizes
 */
 
-.alert-small { 
-  font-size: 11px;
+.alert { 
+  font-size: 13px;
   font-weight: 600;
   letter-spacing: .13em;
   text-transform: uppercase;
+  padding: 15px;
+}
+
+.alert-small { 
+  font-size: 11px;
   padding: 7px 15px;
 }
 
-.alert-black {
+.alert-black,
+.alert-primary {
   color: #fff;
 }
 

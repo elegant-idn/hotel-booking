@@ -50,8 +50,15 @@ class Home extends Component {
             </Overlay>
           </div>
         </div>
-        <div className="jumbotron bg-white">
-        </div>
+        <Alert
+          color="alert-primary"
+          className="text-center"
+          style={{
+            marginBottom: 0
+          }}
+          >
+          Early members receive 50% off membership!
+        </Alert>
       </div>
     );
   }
