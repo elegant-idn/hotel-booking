@@ -1,6 +1,6 @@
 {
   "name": "papriika",
-  "version": "0.3.0",
+  "version": "0.3.1",
   "private": true,
   "dependencies": {
     "@universelabs/meta": "^1.4.4",
@@ -18,9 +18,9 @@
   },
   "scripts": {
     "start": "HTTPS=true react-scripts start",
-    "build": "react-scripts build && HTTPS=true react-scripts && serve -s build",
-    "serve": "HTTPS=true react-scripts && serve -s build",
+    "build": "react-scripts build",
     "test": "react-scripts test",
+    "serve": "react-scripts build && HTTPS=true react-scripts && serve -s build",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
