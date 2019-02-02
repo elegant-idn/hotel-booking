@@ -57,7 +57,7 @@ class Home extends Component {
             marginBottom: 0
           }}
           >
-          Early members receive 50% off membership!
+          Early members receive <span style={{fontWeight: '900'}}>50% off</span> membership!
         </Alert>
         <Alert
           color="alert-black"
@@ -67,7 +67,7 @@ class Home extends Component {
             textTransform: 'none'
           }}
           >
-          We use the blockchain as a source of truth, guaranteeing travellers and hoteliers the best rates.
+          We use the blockchain as a source of truth, guaranteeing <span style={{fontWeight: '900'}}>Travellers</span> and <span style={{fontWeight: '900'}}>Hôtelier</span> the best rates.
         </Alert>
       </div>
     );
