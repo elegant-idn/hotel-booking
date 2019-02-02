@@ -20,7 +20,7 @@
     "start": "HTTPS=true react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "serve": "react-scripts build && HTTPS=true react-scripts && serve -s build",
+    "serve": "react-scripts build && serve -s build",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
