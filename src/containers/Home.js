@@ -14,7 +14,7 @@ const Overlay = styled.div`
   height: 500px;
 
   @media (min-width: 768px) {
-    height: 600px;
+    height: 660px;
   }
 `;
 
@@ -35,12 +35,18 @@ class Home extends Component {
         </Alert>
 
         <Navbar colorScheme="navbar-light"/>
-        <div className="container pl-0 pl-md-3 pr-0 pr-md-3">
+        <div className="container-fluid pl-0 pr-0 hero">
           <div className="row no-gutters">
             <Overlay className="col d-flex align-items-center justify-content-center text-white p-4">
-              <h3 className="text-center">
-                Access over 2,300 of the world’s best hotels.
-              </h3>
+              <div className="container">
+                <h1 className="display-3 text-center"
+                  style={{
+                    fontFamily: 'Judson, serif',
+                    fontWeight: '500'
+                  }}>
+                  Access over 2,300 of the world’s best hotels.
+                </h1>
+              </div>
             </Overlay>
           </div>
         </div>

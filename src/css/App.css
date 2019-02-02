@@ -17,7 +17,11 @@
 @media (min-width: 992px) {}
 
 /* Extra large devices (large desktops, 1200px and up) */
-@media (min-width: 1200px) {}
+@media (min-width: 1200px) {
+  .hero {
+    /*max-width: 1440px;*/
+  }
+}
 
 /* Extra Extra small devices devices */
 @media (max-width:348px) {}
