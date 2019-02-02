@@ -35,7 +35,7 @@ class Home extends Component {
         </Alert>
 
         <Navbar colorScheme="navbar-light"/>
-        <div className="container pl-0 pl-sm-3 pr-0 pr-sm-3">
+        <div className="container pl-0 pl-md-3 pr-0 pr-md-3">
           <div className="row no-gutters">
             <Overlay className="col d-flex align-items-center justify-content-center text-white p-4">
               <h3 className="text-center">

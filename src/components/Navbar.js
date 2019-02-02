@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
-import '../css/Navbar.css';
+import $ from 'jquery';
+import 'jquery-ui-dist/jquery-ui.min.js';
 import styled from 'styled-components';
+import '../css/Navbar.css';
 import Logo from '../components/Logo';
 import NavbarToggler from '../components/NavbarToggler';
 
@@ -32,12 +34,17 @@ class Navbar extends Component {
           <NavbarToggler className="d-flex align-items-right navbar-toggler-dark"/>
           <div className="collapse navbar-collapse" id="navbarBasic">
             <Div className="container d-flex align-items-center justify-content-center d-md-none">
-              <a className="navbar-brand d-flex align-items-center justify-content-center" href="/">
+              <a 
+              className="navbar-brand d-flex align-items-center justify-content-center" 
+              href="/"
+              style={{
+                marginRight: 0
+              }}>
                 <Logo className="navbar-brand-img" logoAlt="Papriika Logo"/>
               </a>
             </Div>
             <span className="navbar-text navbar-text-tagline">
-              Hotel Club.
+              The Hotel Club
             </span>
             <ul className="navbar-nav ml-auto">
               <li className="nav-item d-md-none">

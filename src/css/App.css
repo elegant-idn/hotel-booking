@@ -1,11 +1,5 @@
 /* App.css */
 
-/* Hero */
-
-.hero-container {
-  height: 480px;
-}
-
 /* Extra small devices (portrait phones, less than 576px) */
 /* No media query for `xs` since this is the default in Bootstrap */
 
@@ -14,16 +8,9 @@
 
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
-
-  .hero-container {
-    height: 450px;
-    /*background-clip: content-box;*/ /* Hack to remove padding on bkg images */
-  }
-
   h3 {
     font-weight: 800;
   }
-
 }
 
 /* Large devices (desktops, 992px and up) */
@@ -42,7 +29,11 @@
 @media (max-width: 767.98px) {}
 
 /* Medium devices (tablets, less than 992px)*/
-@media (max-width: 991.98px) {}
+@media (max-width: 991.98px) {
+  .container {
+    max-width: none;
+  }
+}
 
 /* Large devices (desktops, less than 1200px)*/
 @media (max-width: 1199.98px) {}
