@@ -64,7 +64,7 @@ class Home extends Component {
           className="text-center"
           style={{
             marginBottom: 0,
-            textTransform: 'capitalize'
+            textTransform: 'none'
           }}
           >
           We use the blockchain as a source of truth, guaranteeing travellers and hoteliers the best rates.
