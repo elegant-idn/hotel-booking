@@ -1,47 +1,41 @@
-<br/>
 <p align="center">
   <a href="https://papriika.com">
-    <img src="https://user-images.githubusercontent.com/1711854/52179916-e49f9580-27ad-11e9-8c42-efef29c4854e.png" width=72 alt>
+    <img src="https://user-images.githubusercontent.com/1711854/52179912-e49f9580-27ad-11e9-85fd-96ef9cbc9a4a.png" width=110 alt="Papriika">
   </a>
+  <h3 align="center">Papriika.com</h3>
   <p align="center">
-    Papriika hotel club. Over 2,300 of the world's best hotels.
+    Papriika hotel club. Access over 2,300 of the world's best hotels.
     <br/>
-    <a href="https://papriika.com" alt="Papriika">
-      <strong>Papriika.com</strong>
+    <a href="https://github.com/papriika/papriika.com"><strong>GitHub</strong></a>
+    <br/>
+    <br/>
+    <a href="http://papriika.com/" alt="Papriika">
+      Website
     </a>
-    &nbsp;
-    <a href="https://github.com/papriika" alt="GitHub papriika (Papriika)">
-      <strong>GitHub</strong></a>
-    </a>
-    &nbsp;
-    <a href="https://www.instagram.com/papriikaco/" alt="Instagram Papriika">
-      <strong>Instagram</strong></a>
-    </a>
-    &nbsp;
-    <a href="https://www.pinterest.com/papriika/" alt="Pinterest Papriika">
-      <strong>Pinterest</strong></a>
-    </a>
-    &nbsp;
+    &middot;
     <a href="https://www.facebook.com/papriikaco/" alt="Facebook Papriika">
-      <strong>Facebook</strong></a>
+      Facebook
     </a>
-    <br />
-    <a href="https://github.com/papriika/papriika.com/issues/new" alt="Report a Bug (Papriika.com)">
-      Report bug
+    &middot;
+    <a href="https://www.instagram.com/papriikaco/" alt="Instagram Papriika">
+      Instagram
     </a>
-    &nbsp;
-    <a href="/" alt="Contact Papriika">
-      Contact
+    &middot;
+    <a href="https://www.pinterest.com/papriika/" alt="Pinterest Papriika">
+      Pinterest
     </a>
     <br/>
     <br/>
-    <a href="https://twitter.com/intent/follow?screen_name=PapriikaCo">
+   <a href="https://twitter.com/intent/follow?screen_name=PapriikaCo">
       <img src="https://img.shields.io/twitter/url/https/twitter.com/papriikaco.svg?style=social&label=Follow%20%40PapriikaCo&logo=twitter" alt="follow on Twitter">
     </a>
     &nbsp;
     <a href="https://github.com/papriika/papriika.com/stargazers">
       <img src="https://img.shields.io/github/stars/papriika/papriika.com.svg?style=social&label=Star&maxAge=2592000" alt="Star Repo">
     </a>
+    <br/>
+    <br/>
+    
   </p>
 </p>
 <br/>
