@@ -1,10 +1,10 @@
 <br/>
 <p align="center">
   <a href="https://papriika.com">
-    <img src="https://user-images.githubusercontent.com/1711854/52179916-e49f9580-27ad-11e9-8c42-efef29c4854e.png" width=80 alt>
+    <img src="https://user-images.githubusercontent.com/1711854/52179916-e49f9580-27ad-11e9-8c42-efef29c4854e.png" width=72 alt>
   </a>
   <p align="center">
-    Papriika hotel club
+    Papriika hotel club. Over 2,300 of the world's best hotels.
     <br/>
     <a href="https://papriika.com" alt="Papriika">
       <strong>Papriika.com</strong>
@@ -12,6 +12,18 @@
     &nbsp;
     <a href="https://github.com/papriika" alt="GitHub papriika (Papriika)">
       <strong>GitHub</strong></a>
+    </a>
+    &nbsp;
+    <a href="https://www.instagram.com/papriikaco/" alt="Instagram Papriika">
+      <strong>Instagram</strong></a>
+    </a>
+    &nbsp;
+    <a href="https://www.pinterest.com/papriika/" alt="Pinterest Papriika">
+      <strong>Pinterest</strong></a>
+    </a>
+    &nbsp;
+    <a href="https://www.facebook.com/papriikaco/" alt="Facebook Papriika">
+      <strong>Facebook</strong></a>
     </a>
     <br />
     <a href="https://github.com/papriika/papriika.com/issues/new" alt="Report a Bug (Papriika.com)">
