@@ -2,7 +2,6 @@
   <a href="https://papriika.com">
     <img src="https://user-images.githubusercontent.com/1711854/52179912-e49f9580-27ad-11e9-85fd-96ef9cbc9a4a.png" width=110 alt="Papriika">
   </a>
-  <h3 align="center">Papriika.com</h3>
   <p align="center">
     Papriika hotel club. Access over 2,300 of the world's best hotels.
     <br/>
@@ -34,8 +33,6 @@
       <img src="https://img.shields.io/github/stars/papriika/papriika.com.svg?style=social&label=Star&maxAge=2592000" alt="Star Repo">
     </a>
     <br/>
-    <br/>
-    
   </p>
 </p>
 <br/>
