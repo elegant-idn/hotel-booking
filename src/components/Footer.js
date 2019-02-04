@@ -92,7 +92,7 @@ class Footer extends Component {
             className="text-white">
               Universe Labs
             </a>
-            &nbsp;open source project.
+            &nbsp;open source, dapp project.
         </div>
       </footer>
     );
