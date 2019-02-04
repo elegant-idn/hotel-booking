@@ -74,7 +74,8 @@ class Home extends Component {
           className="mx-auto text-center p-4 mt-9"
           style={{
             backgroundColor: '#000',
-            height: '100vh'
+            height: '100vh',
+            maxHeight: '300px'
           }}
           />
       </div>
