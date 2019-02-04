@@ -71,11 +71,9 @@ class Home extends Component {
           We use the blockchain as a source of truth, guaranteeing <span style={{fontWeight: '900'}}>Travellers</span> and <span style={{fontWeight: '900'}}>Hôteliers</span> the best rates.
         </Alert>
         <Footer 
-          className="mx-auto text-center p-4 mt-9"
+          className="mx-auto text-center p-5 mt-9"
           style={{
-            backgroundColor: '#000',
-            height: '100vh',
-            maxHeight: '300px'
+            backgroundColor: '#000'
           }}
           />
       </div>

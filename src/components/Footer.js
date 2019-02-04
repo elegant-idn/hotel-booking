@@ -8,7 +8,7 @@ class Footer extends Component {
       <footer 
         className={`container-fluid ${this.props.className}`}
         style={this.props.style}>
-        <div className="text-white-50 text-footer font-weight-bold">
+        <div className="text-white-50 text-footer font-weight-bold mb-3">
           <ul className="list-inline my-2">
             <li className="list-inline-item mx-2">
               <a href="https://github.com/papriika/" 
@@ -62,15 +62,22 @@ class Footer extends Component {
             </li>
           </ul>
         </div>
-        <div className="text-footer text-white-50 font-weight-normal my-1">
+        <div className="text-footer text-white-50 font-weight-normal mb-5">
+          <a 
+            href="mailto:inquiries@papriika.com?subject=Papriika membership inquiry | Papriika.com" 
+            alt="Papriika membership inquiries"
+            className="text-white">
+            Memberhip inquiries
+          </a>
+          &nbsp;&nbsp;&nbsp;&middot;&nbsp;&nbsp;&nbsp;
           <a 
             href="mailto:support@papriika.com?subject=Mail from GitHub Papriika.com" 
             alt="Contact Papriika"
-            className="text-white font-weight-bold">
-            Contact
+            className="text-white">
+            Other inquiries
           </a>
         </div>
-        <div className="text-footer text-white-50 font-weight-normal">
+        <div className="text-footer text-white-50 font-weight-normal mb-2">
           Papriika Inc. 
             <CopyrightUpdate 
               style={{
@@ -78,6 +85,14 @@ class Footer extends Component {
                 marginLeft: '6px'
               }}
             />
+        </div>
+        <div className="text-footer text-white-50 font-weight-normal pb-2">
+          Papriika Inc. is a <a href="http://universe.engineering" 
+            alt="Universe.engineering"
+            className="text-white">
+              Universe Labs
+            </a>
+            &nbsp;open source project.
         </div>
       </footer>
     );
