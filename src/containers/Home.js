@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import styled from 'styled-components';
 import Alert from '../components/Alert';
 import Navbar from '../components/Navbar';
+import Footer from '../components/Footer';
 import Background from './../img/hotels/hotel-142-shanghai-puli-hotel-spa-01.jpg';
 
 const Overlay = styled.div`
@@ -69,7 +70,15 @@ class Home extends Component {
           >
           We use the blockchain as a source of truth, guaranteeing <span style={{fontWeight: '900'}}>Travellers</span> and <span style={{fontWeight: '900'}}>Hôteliers</span> the best rates.
         </Alert>
+        <Footer 
+          className="mx-auto text-center p-4 mt-9"
+          style={{
+            backgroundColor: '#000',
+            height: '100vh'
+          }}
+          />
       </div>
+
     );
   }
 }

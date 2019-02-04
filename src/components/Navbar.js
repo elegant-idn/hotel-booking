@@ -1,6 +1,4 @@
 import React, { Component } from 'react';
-import $ from 'jquery';
-import 'jquery-ui-dist/jquery-ui.min.js';
 import styled from 'styled-components';
 import '../css/Navbar.css';
 import Logo from '../components/Logo';
