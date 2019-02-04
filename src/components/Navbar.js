@@ -53,7 +53,7 @@ class Navbar extends Component {
                 </a>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="mailto:guy@papriika.com?subject=Mail from Papriika.com">
+                <a className="nav-link" href="mailto:support@papriika.com?subject=Mail from Papriika.com">
                   Contact
                 </a>
               </li>

@@ -6,6 +6,8 @@
     Papriika hotel club. Access over 2,300 of the world's best hotels.
     <br/>
     <a href="https://github.com/papriika/papriika.com"><strong>GitHub</strong></a>
+    &middot;
+     <a href="mailto:support@papriika.com?subject=Mail from GitHub Papriika.com"><strong>Contact</strong></a>
     <br/>
     <br/>
     <a href="http://papriika.com/" alt="Papriika">
