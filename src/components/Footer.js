@@ -1,6 +1,17 @@
 import React, { Component } from 'react';
+import styled from 'styled-components';
 import FooterSocial from '../components/FooterSocial';
 import CopyrightUpdate from 'copyright-update';
+
+const Div = styled.div`
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+  background-color: rgba(255,255,255,0.1);
+  padding: 12px;
+  border-radius: 2px;
+`;
 
 class Footer extends Component {
   state = {
@@ -48,29 +59,29 @@ class Footer extends Component {
       <footer 
         className={`container-fluid ${this.props.className}`}
         style={this.props.style}>
-        <div className="text-white-50 text-footer font-weight-bold mb-5">
+        <div className="small text-white-50 font-weight-bold mb-5">
           <ul className="list-inline my-2">
             <FooterSocial 
               footerSocialItems={this.state.footerSocialItems} 
             />
           </ul>
         </div>
-        <div className="text-footer text-white-50 font-weight-normal mb-5">
+        <Div className="col-md-9 col-lg-8 mx-auto text-footer text-white-50 mb-5">
           <a 
             href="mailto:inquiries@papriika.com?subject=Papriika membership inquiry | Papriika.com" 
             alt="Papriika membership inquiries"
-            className="text-white">
+            className="inline text-white">
             Membership inquiries
           </a>
           &nbsp;&nbsp;&nbsp;&middot;&nbsp;&nbsp;&nbsp;
           <a 
             href="mailto:support@papriika.com?subject=Mail from GitHub Papriika.com" 
             alt="Contact Papriika"
-            className="text-white">
-            General inquiries
+            className="inline text-white">
+            Contact
           </a>
-        </div>
-        <div className="text-footer text-white-50 font-weight-normal mb-2">
+        </Div>
+        <div className="small text-white-50 letter-space mb-2">
           <CopyrightUpdate 
             style={{
               display: 'inline-block'
@@ -78,7 +89,7 @@ class Footer extends Component {
           />
           &nbsp;Papriika Inc.
         </div>
-        <div className="text-footer text-white-50 font-weight-normal pb-2">
+        <div className="small text-white-50 letter-space pb-2">
           Papriika is a <a href="http://universe.engineering" 
             alt="Universe.engineering"
             className="text-white">

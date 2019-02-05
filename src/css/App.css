@@ -1,7 +1,7 @@
 /* App.css */
 
-.text-footer {
-  font-size: 80%;
+.letter-space {
+  letter-spacing: .03em;
 }
 
 /* Extra small devices (portrait phones, less than 576px) */
