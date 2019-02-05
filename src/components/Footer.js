@@ -67,32 +67,31 @@ class Footer extends Component {
             href="mailto:inquiries@papriika.com?subject=Papriika membership inquiry | Papriika.com" 
             alt="Papriika membership inquiries"
             className="text-white">
-            Memberhip inquiries
+            Membership inquiries
           </a>
           &nbsp;&nbsp;&nbsp;&middot;&nbsp;&nbsp;&nbsp;
           <a 
             href="mailto:support@papriika.com?subject=Mail from GitHub Papriika.com" 
             alt="Contact Papriika"
             className="text-white">
-            Other inquiries
+            General inquiries
           </a>
         </div>
         <div className="text-footer text-white-50 font-weight-normal mb-2">
-          Papriika Inc. 
-            <CopyrightUpdate 
-              style={{
-                display: 'inline-block',
-                marginLeft: '6px'
-              }}
-            />
+          <CopyrightUpdate 
+            style={{
+              display: 'inline-block'
+            }}
+          />
+          &nbsp;Papriika Inc.
         </div>
         <div className="text-footer text-white-50 font-weight-normal pb-2">
-          Papriika Inc. is a <a href="http://universe.engineering" 
+          Papriika is a <a href="http://universe.engineering" 
             alt="Universe.engineering"
             className="text-white">
               Universe Labs
             </a>
-            &nbsp;open source, dapp project.
+            &nbsp;open source, dapp initiative.
         </div>
       </footer>
     );
