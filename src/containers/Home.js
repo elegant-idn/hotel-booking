@@ -85,7 +85,7 @@ class Home extends Component {
                 </Lead>
                 <div className="text-center">
                   <a
-                    class="btn btn-lg btn-primary"
+                    class="btn btn-lg btn-primary mb-3"
                     style={{
                       fontSize: '14px',
                       fontWeight: '700',
@@ -98,6 +98,7 @@ class Home extends Component {
                     role="button">
                     Join the club!
                   </a>
+                  <p className="small">Become an early member today and save!</p>
                 </div>
               </div>
             </Overlay>
