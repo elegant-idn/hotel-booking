@@ -81,7 +81,7 @@ class Home extends Component {
                     </HeadVariable>.
                 </HeroHeading>
                 <Lead className="lead font-weight-normal text-center mx-auto">
-                  We use blockchain technology to provide clear and open pricing. As a result hotels pass the savings on to you.
+                  We use the blockchain to provide clear and open pricing. As a result hotels pass the savings on to you.
                 </Lead>
               </div>
             </Overlay>
