@@ -37,6 +37,7 @@ const HeadVariable = styled.span`
 `;
 
 const HeroHeading = styled.h1`
+  font-size: 3.25rem;
   line-height: 1;
 
   @media (min-width: 576px) {
