@@ -76,14 +76,29 @@ class Home extends Component {
                     fontFamily: 'Judson, serif',
                     fontWeight: '500'
                   }}>
-                  Join the club!<br />
+                  <HeadVariable>Join the club!<br /></HeadVariable>
                   Access the world's best hotels direct
-                    <HeadVariable> and pay no fees
-                    </HeadVariable>.
+                    <HeadVariable> and pay no fees</HeadVariable>.
                 </HeroHeading>
-                <Lead className="lead font-weight-normal text-center mx-auto">
+                <Lead className="lead font-weight-normal text-center mx-auto mb-4">
                   We use the blockchain to provide clear and open pricing. Saving hotels and you money.
                 </Lead>
+                <div className="text-center">
+                  <a
+                    class="btn btn-lg btn-primary"
+                    style={{
+                      fontSize: '14px',
+                      fontWeight: '700',
+                      letterSpacing: '.03em',
+                      textTransform: 'uppercase',
+                      padding: '16px 56px',
+                      borderRadius: '6px'
+                    }}
+                    href="mailto:inquiries@papriika.com?subject=Join the club. Become an early member and receive 50% off! — Papriika.com" 
+                    role="button">
+                    Join the club!
+                  </a>
+                </div>
               </div>
             </Overlay>
           </div>
