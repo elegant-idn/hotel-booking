@@ -77,8 +77,8 @@ class Home extends Component {
                     fontWeight: '500'
                   }}>
                   <HeadVariable>Join the club!<br /></HeadVariable>
-                  Access the world's best hotels direct
-                    <HeadVariable> and pay no fees</HeadVariable>.
+                  Access the world's best hotels direct.
+                    <HeadVariable> Pay no booking fees</HeadVariable>.
                 </HeroHeading>
                 <Lead className="lead font-weight-normal text-center mx-auto mb-4">
                   We use the blockchain to provide clear and open pricing. Saving hotels and you money.
