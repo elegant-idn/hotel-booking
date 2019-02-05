@@ -21,6 +21,7 @@ const Overlay = styled.div`
 
 const Lead = styled.p`
   font-size: 1.15rem;
+  max-width: 550px;
 
   @media (min-width: 576px) {
     font-size: 1.25rem;
@@ -36,8 +37,7 @@ const HeadVariable = styled.span`
 `;
 
 const HeroHeading = styled.h1`
-  font-size: 3.25rem;
-  line-height: 0.9;
+  line-height: 1;
 
   @media (min-width: 576px) {
     font-size: 3.54824rem;
@@ -80,8 +80,8 @@ class Home extends Component {
                     <HeadVariable> and pay no fees
                     </HeadVariable>.
                 </HeroHeading>
-                <Lead className="lead font-weight-normal text-center">
-                  We use blockchain technology to provide clear and open pricing. As a result hotels no longer need to work with large online booking companies.
+                <Lead className="lead font-weight-normal text-center mx-auto">
+                  We use blockchain technology to provide clear and open pricing. As a result hotels pass the savings on to you.
                 </Lead>
               </div>
             </Overlay>
