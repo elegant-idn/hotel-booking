@@ -9,7 +9,7 @@ const Div = styled.div`
   font-weight: 700;
   letter-spacing: .1em;
   text-transform: uppercase;
-  background-color: rgba(255,255,255,0.055);
+  background-color: rgba(255,255,255,0.07);
   padding: 16px;
   border-radius: 6px;
   max-width: 650px;
@@ -85,7 +85,7 @@ class Footer extends Component {
         <Div className="col-md-9 col-lg-8 mx-auto text-footer text-white-50 mb-5">
           <FooterFeature>
             <a 
-              href="mailto:inquiries@papriika.com?subject=Papriika membership inquiry | Papriika.com" 
+              href="mailto:inquiries@papriika.com?subject=Papriika membership inquiry — Papriika.com" 
               alt="Papriika membership inquiries"
               className="inline text-white">
               Membership inquiries
