@@ -94,7 +94,7 @@ class Home extends Component {
                       padding: '16px 56px',
                       borderRadius: '6px'
                     }}
-                    href="mailto:inquiries@papriika.com?subject=Join the club. Become an early member and receive 50% off! — Papriika.com" 
+                    href="mailto:join@papriika.com?subject=Join the club. Become an early member and receive 50% off! — Papriika.com" 
                     role="button">
                     Join the club!
                   </a>
