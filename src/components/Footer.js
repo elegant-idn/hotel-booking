@@ -4,13 +4,29 @@ import FooterSocial from '../components/FooterSocial';
 import CopyrightUpdate from 'copyright-update';
 
 const Div = styled.div`
+  display: inline-block;
   font-size: 11px;
   font-weight: 700;
   letter-spacing: .1em;
   text-transform: uppercase;
-  background-color: rgba(255,255,255,0.1);
-  padding: 12px;
-  border-radius: 2px;
+  background-color: rgba(255,255,255,0.055);
+  padding: 16px;
+  border-radius: 6px;
+  max-width: 650px;
+`;
+
+const FooterFeature = styled.div`
+  display: inline-block;
+
+  @media (max-width:348px) {
+    display: block;
+    line-height: 35px;
+  }
+`;
+const Middot = styled.span`
+  @media (max-width:348px) {
+    display: none;
+  }
 `;
 
 class Footer extends Component {
@@ -67,19 +83,25 @@ class Footer extends Component {
           </ul>
         </div>
         <Div className="col-md-9 col-lg-8 mx-auto text-footer text-white-50 mb-5">
-          <a 
-            href="mailto:inquiries@papriika.com?subject=Papriika membership inquiry | Papriika.com" 
-            alt="Papriika membership inquiries"
-            className="inline text-white">
-            Membership inquiries
-          </a>
-          &nbsp;&nbsp;&nbsp;&middot;&nbsp;&nbsp;&nbsp;
-          <a 
-            href="mailto:support@papriika.com?subject=Mail from GitHub Papriika.com" 
-            alt="Contact Papriika"
-            className="inline text-white">
-            Contact
-          </a>
+          <FooterFeature>
+            <a 
+              href="mailto:inquiries@papriika.com?subject=Papriika membership inquiry | Papriika.com" 
+              alt="Papriika membership inquiries"
+              className="inline text-white">
+              Membership inquiries
+            </a>
+          </FooterFeature>
+          <Middot>
+            &nbsp;&nbsp;&nbsp;&middot;&nbsp;&nbsp;&nbsp;
+          </Middot>
+          <FooterFeature>
+            <a 
+              href="mailto:support@papriika.com?subject=Mail from GitHub Papriika.com" 
+              alt="Contact Papriika"
+              className="inline text-white">
+              Contact
+            </a>
+          </FooterFeature>
         </Div>
         <div className="small text-white-50 letter-space mb-2">
           <CopyrightUpdate 
