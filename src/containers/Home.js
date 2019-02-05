@@ -45,8 +45,12 @@ class Home extends Component {
                     fontFamily: 'Judson, serif',
                     fontWeight: '500'
                   }}>
-                  Access over 2,300 of the world’s best hotels.
+                  Join the club!<br />
+                  Access the world's best hotels direct and pay no fees.
                 </h1>
+                <p className="lead font-weight-normal text-center">
+                  The Papriika hotel club uses the blockchain to provide clear and open pricing. As a result hotels no longer need to work with large online booking companies. Book direct and we'll pass on the saving to you.
+                </p>
               </div>
             </Overlay>
           </div>
