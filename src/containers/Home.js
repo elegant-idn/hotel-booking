@@ -19,6 +19,36 @@ const Overlay = styled.div`
   }
 `;
 
+const Lead = styled.p`
+  font-size: 1.15rem;
+
+  @media (min-width: 576px) {
+    font-size: 1.25rem;
+  }
+`;
+
+const HeadVariable = styled.span`
+  display: none;
+
+  @media (min-width: 768px) {
+    display: inline;
+  }
+`;
+
+const HeroHeading = styled.h1`
+  font-size: 3.25rem;
+  line-height: 0.9;
+
+  @media (min-width: 576px) {
+    font-size: 3.54824rem;
+    line-height: 1.1;
+  }
+
+  @media (min-width: 768px) {
+    font-size: 5.00713rem;
+  }
+`;
+
 // Using a ES6 class component as it contains state.
 class Home extends Component {
   render() {
@@ -40,17 +70,19 @@ class Home extends Component {
           <div className="row no-gutters">
             <Overlay className="col d-flex align-items-center justify-content-center text-white p-4">
               <div className="container">
-                <h1 className="display-3 text-center"
+                <HeroHeading className="display-3 text-center"
                   style={{
                     fontFamily: 'Judson, serif',
                     fontWeight: '500'
                   }}>
                   Join the club!<br />
-                  Access the world's best hotels direct and pay no fees.
-                </h1>
-                <p className="lead font-weight-normal text-center">
-                  The Papriika hotel club uses the blockchain to provide clear and open pricing. As a result hotels no longer need to work with large online booking companies. Book direct and we'll pass on the saving to you.
-                </p>
+                  Access the world's best hotels direct
+                    <HeadVariable> and pay no fees
+                    </HeadVariable>.
+                </HeroHeading>
+                <Lead className="lead font-weight-normal text-center">
+                  We use blockchain technology to provide clear and open pricing. As a result hotels no longer need to work with large online booking companies.
+                </Lead>
               </div>
             </Overlay>
           </div>
