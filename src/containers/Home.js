@@ -36,20 +36,6 @@ const HeadVariable = styled.span`
   }
 `;
 
-const HeroHeading = styled.h1`
-  font-size: 3.25rem;
-  line-height: 1;
-
-  @media (min-width: 576px) {
-    font-size: 3.54824rem;
-    line-height: 1.1;
-  }
-
-  @media (min-width: 768px) {
-    font-size: 5.00713rem;
-  }
-`;
-
 // Using a ES6 class component as it contains state.
 class Home extends Component {
   render() {
@@ -71,7 +57,7 @@ class Home extends Component {
           <div className="row no-gutters">
             <Overlay className="col d-flex align-items-center justify-content-center text-white p-4">
               <div className="container">
-                <HeroHeading className="display-3 text-center"
+                <div className="display-4 text-center"
                   style={{
                     fontFamily: 'Judson, serif',
                     fontWeight: '500'
@@ -79,13 +65,13 @@ class Home extends Component {
                   <HeadVariable>Join the club!<br /></HeadVariable>
                   Access the world's best hotels direct.
                     <HeadVariable> Pay no booking fees</HeadVariable>.
-                </HeroHeading>
+                </div>
                 <Lead className="lead font-weight-normal text-center mx-auto mb-4">
                   We use the blockchain to provide clear and open pricing. Saving hotels and you money.
                 </Lead>
                 <div className="text-center">
                   <a
-                    class="btn btn-lg btn-primary mb-3"
+                    className="btn btn-lg btn-primary mb-3"
                     style={{
                       fontSize: '14px',
                       fontWeight: '700',
