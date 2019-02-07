@@ -18,7 +18,7 @@ class HeaderBooking extends Component {
       <div className="container bg-white d-none d-md-block">
         <div className="row">
           <div className="container navbar-booking bg-white">
-            <h3>Access over 2,300 of the world’s best hotels, hand curated.</h3>
+            <h3>Access over 2,400 of the world’s best hotels, hand curated.</h3>
             <form>
               <div className="form-row">
                 <div className="col"
