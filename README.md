@@ -3,7 +3,7 @@
     <img src="https://user-images.githubusercontent.com/1711854/52179912-e49f9580-27ad-11e9-85fd-96ef9cbc9a4a.png" width=110 alt="Papriika">
   </a>
   <p align="center">
-    Papriika hotel club. Access over 2,300 of the world's best hotels.
+    Papriika Hotel Club. Access the world's best hotels. Pay no booking fees.
     <br/>
     <a href="https://github.com/papriika/papriika.com"><strong>GitHub</strong></a>
     &middot;
@@ -39,10 +39,9 @@
 </p>
 <br/>
 <p align="center">
-  <img width="700" alt="papriika.com-v0.3.1" src="https://user-images.githubusercontent.com/1711854/52180021-04838900-27af-11e9-9ab7-648d8b2dfcd9.jpg">
+  <img width="700" alt="papriika.com-v0.4.4" src="https://user-images.githubusercontent.com/1711854/52493286-1000f680-2b99-11e9-9119-bf5f490e381e.jpg">
 </p>
 <br/>
-
 
 ## Table of contents
 
@@ -51,6 +50,7 @@
 - [Maintainers](#maintainers)
 
 ## Status
+
 [![Papriika.com version](https://img.shields.io/badge/dynamic/json.svg?label=Papriika.com+version&url=https%3A%2F%2Fraw.githubusercontent.com%2Fpapriika%2Fpapriika.com%2Fmaster%2Fpackage.json&query=%24.version&colorA=%23212121&colorB=%2300BB00)](https://github.com/papriika/papriika.com)
 [![dependencies status](https://img.shields.io/david/papriika/papriika.com.svg?label=dependencies&colorA=%23212121)](https://david-dm.org/papriika/papriika.com)
 [![devDependencies status](https://img.shields.io/david/dev/papriika/papriika.com.svg?label=devDependencies&colorA=%23212121)](https://david-dm.org/papriika/papriika.com?type=dev)
