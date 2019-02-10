@@ -83,15 +83,3 @@ $ npm start
 ```
 
 
-## Maintainers
-
-**Guy Lepage**
-
-[![Follow on Twitter](https://img.shields.io/badge/Twitter-@guylepage3-blue.svg?colorA=212121&colorB=007BFF)](https://twitter.com/intent/follow?screen_name=guylepage3)
-[![Github](https://img.shields.io/badge/GitHub-guylepage3-blue.svg?colorA=212121&colorB=007BFF)](https://github.com/guylepage3)
-[![npm](https://img.shields.io/badge/npm-~guylepage3-red.svg?colorA=212121&colorB=FF0000)](https://www.npmjs.com/~guylepage3)
-[![Medium](https://img.shields.io/badge/Medium-@guylepage3-green.svg?colorA=212121&colorB=00BB00)](https://medium.com/@guylepage3)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-in/guylepage/-blue.svg?colorA=212121&colorB=007BFF)](https://www.linkedin.com/in/guylepage/)
-
-- <https://twitter.com/guylepage3>
-- <https://github.com/guylepage3>
